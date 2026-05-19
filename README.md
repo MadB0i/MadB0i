@@ -29,7 +29,6 @@ Hey 👋 I'm RUP
 
 ---
 
-
 - Build useful web apps
 - Publish projects on GitHub
 - Create indie games
