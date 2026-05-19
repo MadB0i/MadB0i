@@ -1,8 +1,8 @@
 Hey 👋 I'm RUP
 
 💻 MCA Student & Python Full Stack Developer  
-🚀 Building Django Projects & AI Experiments  
-🎮 Gamer | CODM & BGMI  
+🚀 Building Projects & AI Experiments  
+🎮 Gamer  
 🌱 Currently Learning:
 - Django
 - APIs
