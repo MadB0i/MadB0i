@@ -1,6 +1,6 @@
 Hey 👋 I'm RUP
 
-💻 MCA Student & Python Full Stack Developer  
+💻 Python Full Stack Developer  
 🚀 Building Projects & AI Experiments  
 🎮 Gamer  
 🌱 Currently Learning:
