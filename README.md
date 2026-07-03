@@ -1,16 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+%F0%9F%91%8B+I'm+Rupjyoti+%E2%80%94+aka+MadB0i;Indie+Dev+%7C+AI+Tinkerer+%7C+Cat+Guy+%F0%9F%90%B1;I+turn+weird+ideas+into+weirder+code" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+%F0%9F%91%8B+I'm+Rup+%E2%80%94+aka+MadB0i;Indie+Dev+%7C+AI+Tinkerer+%7C+Cat+Guy+%F0%9F%90%B1;I+turn+weird+ideas+into+weirder+code" alt="Typing SVG" />
 
 </div>
 
 ---
-
-```
-  /\_/\
- ( •ᴗ• )   still shipping...
-  > ♥ <
-```
 
 I build things — sometimes useful, sometimes just cool. MCA grad from Assam, working independently across mobile, web, and backend. Currently deep into AI tooling and indie SaaS.
 
@@ -64,19 +58,13 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 
 </div>
 
-<div align="center">
-
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=MadB0i&theme=tokyonight&no-frame=true&column=4&margin-w=10)
-
-</div>
-
 ---
 
-## 📈 Activity
+## 🐱 MadB0i
 
 <div align="center">
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MadB0i&theme=tokyo-night&hide_border=true&area=true)
+![cat](./cat.svg)
 
 </div>
 
