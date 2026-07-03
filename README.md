@@ -1,7 +1,5 @@
 <div align="center">
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+%F0%9F%91%8B+I'm+Rup+%E2%80%94+aka+MadB0i;Indie+Dev+%7C+AI+Tinkerer+%7C+Cat+Guy+%F0%9F%90%B1;I+turn+weird+ideas+into+weirder+code" alt="Typing SVG" />
-
 </div>
 
 ---
@@ -50,6 +48,14 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 
 ---
 
+## 💻 Languages I Use Most
+
+<div align="center">
+  <img src="./langs.svg" alt="languages used" />
+</div>
+
+---
+
 ## 📊 Stats
 
 <div align="center">
@@ -63,9 +69,7 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 ## 🐱 MadB0i
 
 <div align="center">
-
-![cat](./cat.svg)
-
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" alt="cat animation" />
 </div>
 
 ---
