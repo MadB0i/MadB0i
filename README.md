@@ -60,8 +60,8 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=MadB0i&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=MadB0i&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github&include_all_commits=true" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&theme=tokyonight&hide_border=true&hide=html&langs_count=6" />
 
 </div>
 
