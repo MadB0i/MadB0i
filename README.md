@@ -51,7 +51,7 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 ## 💻 Languages I Use Most
 
 <div align="center">
-  <img src="./langs.svg" alt="languages used" />
+  <img src="./langs.svg" alt="animated languages used" width="460" />
 </div>
 
 ---
