@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+%F0%9F%91%8B+I'm+Rup+%E2%80%94+aka+MadB0i;Indie+Dev+%7C+AI+Tinkerer+%7C+Cat+Guy+%F0%9F%90%B1;I+turn+weird+ideas+into+weirder+code" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+%F0%9F%91%8B+I'm+Rupjyoti+%E2%80%94+aka+MadB0i;Indie+Dev+%7C+AI+Tinkerer+%7C+Cat+Guy+%F0%9F%90%B1;I+turn+weird+ideas+into+weirder+code" alt="Typing SVG" />
 
 </div>
 
@@ -60,14 +60,23 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=MadB0i&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github&include_all_commits=true" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&theme=tokyonight&hide_border=true&hide=html&langs_count=6" />
+![GitHub Streak](https://streak-stats.demolab.com/?user=MadB0i&theme=tokyonight&hide_border=true)
 
 </div>
 
 <div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=MadB0i&theme=tokyonight&hide_border=true)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=MadB0i&theme=tokyonight&no-frame=true&column=4&margin-w=10)
+
+</div>
+
+---
+
+## 📈 Activity
+
+<div align="center">
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MadB0i&theme=tokyo-night&hide_border=true&area=true)
 
 </div>
 
