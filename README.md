@@ -1,148 +1,94 @@
+<div align="center">
 
-# <div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&pause=1200&color=A78BFA&center=true&vCenter=true&width=900&lines=Hey+👋+I'm+Rupjyoti+aka+MadB0i;Indie+Developer+%7C+Flutter+%7C+Django;AI+Builder+%7C+Open+Source+Enthusiast;Building+cool+things+every+day"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+%F0%9F%91%8B+I'm+Rupjyoti+%E2%80%94+aka+MadB0i;Indie+Dev+%7C+AI+Tinkerer+%7C+Cat+Guy+%F0%9F%90%B1;I+turn+weird+ideas+into+weirder+code" alt="Typing SVG" />
 
 </div>
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:8A2BE2&height=220&section=header&text=MadB0i&fontSize=55&fontColor=ffffff&animation=fadeIn"/>
-</p>
+---
+
+```
+  /\_/\
+ ( •ᴗ• )   still shipping...
+  > ♥ <
+```
+
+I build things — sometimes useful, sometimes just cool. MCA grad from Assam, working independently across mobile, web, and backend. Currently deep into AI tooling and indie SaaS.
+
+When I'm not coding, I'm gaming, editing videos, or convincing myself that *one more side project* is a good idea.
 
 ---
 
-# 💫 About Me
+## 🚀 What I'm currently building
 
-<table>
-<tr>
-<td width="60%">
-
-- 🎓 MCA Graduate from Assam
-- 📱 Flutter Developer
-- 🐍 Python & Django Developer
-- 🤖 AI Automation & Local LLMs
-- 🚀 Indie SaaS Builder
-- 🎮 Gamer
-- 🐱 Cat Lover
-
-> I build products that solve real problems and occasionally create weird side projects just for fun.
-
-</td>
-
-<td>
-
-<img src="https://github.com/mayhemantt/mayhemantt/blob/main/assets/typing-cat.gif?raw=true" width="250"/>
-
-</td>
-</tr>
-</table>
+| | Project | What it does |
+|---|---|---|
+| 🔥 | **[commit-roast](https://github.com/MadB0i/commit-roast)** | GitHub Action that roasts your lazy commit messages using AI |
+| 🎖️ | **Mission Khaki** | Premium Flutter app for Indian military exam prep — dark/gold UI |
+| 📄 | **AI Resume Analyzer** | Django SaaS with ATS scoring, job matching, and smart PDF parsing |
+| ⚔️ | **Battle Quiz India** | Real-time multiplayer quiz game — esports aesthetic, WebSocket backend |
+| 🤖 | **DualMind** | Two AI agents that autonomously collaborate to finish tasks |
 
 ---
 
-# 🚀 Current Projects
+## 🛠 Tech I work with
 
-| Project | Description |
-|----------|-------------|
-| 🔥 commit-roast | AI GitHub Action that roasts commit messages |
-| 🎖 Mission Khaki | Flutter exam preparation app |
-| 📄 AI Resume Analyzer | Django ATS Resume Analyzer |
-| ⚔ Battle Quiz India | Multiplayer Quiz Platform |
-| 🤖 DualMind | Two AI agents collaborating |
+**Languages**
 
----
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-# 🛠 Tech Stack
+**Frameworks & Tools**
 
-<p align="center">
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
 
-<img src="https://skillicons.dev/icons?i=python,dart,flutter,django,firebase,postgres,redis,git,github,linux,vscode,html,css,js"/>
+**Currently exploring**
 
-</p>
-
----
-
-# 📊 GitHub Stats
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=MadB0i&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img height="170" src="https://streak-stats.demolab.com?user=MadB0i&theme=tokyonight&hide_border=true"/>
-
-</p>
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
 ---
 
-# 💻 Languages
+## 🐱 Vibe check
 
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</p>
+<div align="center">
+  <img src="cat-animation.svg" alt="MadB0i coding cat" />
+</div>
 
 ---
 
-# 📈 Activity Graph
+## 📊 Stats
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MadB0i&theme=tokyo-night&hide_border=true"/>
+<div align="center">
 
----
+![GitHub Streak](https://streak-stats.demolab.com/?user=MadB0i&theme=tokyonight&hide_border=true)
 
-# 🏆 GitHub Trophies
-
-<p align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=MadB0i&theme=tokyonight&no-frame=true&row=2&column=4"/>
-
-</p>
+</div>
 
 ---
 
-# 🐍 Contribution Snake
+## 🐾 Contribution snake
 
-<p align="center">
-
-<img src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake-dark.svg"/>
-
-</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake-dark.svg" alt="snake" />
+</div>
 
 ---
 
-# ✨ Random Dev Quote
+## 📬 Reach me
 
-<p align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
-
-</p>
+[![Gmail](https://img.shields.io/badge/rupjyotitalukdar98@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:rupjyotitalukdar98@gmail.com)
+[![GitHub](https://img.shields.io/badge/@MadB0i-181717?style=flat-square&logo=github)](https://github.com/MadB0i)
 
 ---
 
-# 📬 Contact
-
-<p align="center">
-
-<a href="mailto:rupjyotitalukdar98@gmail.com">
-<img src="https://skillicons.dev/icons?i=gmail"/>
-</a>
-
-<a href="https://github.com/MadB0i">
-<img src="https://skillicons.dev/icons?i=github"/>
-</a>
-
-</p>
-
----
-
-<p align="center">
-
-<img src="https://komarev.com/ghpvc/?username=MadB0i&style=for-the-badge&color=blueviolet"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8A2BE2,100:6C63FF&height=120&section=footer"/>
-
-</p>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=MadB0i&color=blueviolet&style=flat-square&label=profile+views" alt="profile views" />
+</div>
