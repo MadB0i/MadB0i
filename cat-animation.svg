@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180">
+  <defs>
+    <style>
+      /* Tail wag */
+      @keyframes tailWag {
+        0%   { transform: rotate(-20deg); transform-origin: 380px 130px; }
+        50%  { transform: rotate(20deg);  transform-origin: 380px 130px; }
+        100% { transform: rotate(-20deg); transform-origin: 380px 130px; }
+      }
+      /* Eye blink */
+      @keyframes blink {
+        0%, 90%, 100% { scaleY: 1; }
+        95% { transform: scaleY(0.05); }
+      }
+      @keyframes blinkEye {
+        0%, 88%, 100% { ry: 5; }
+        93% { ry: 0.5; }
+      }
+      /* Paw typing */
+      @keyframes pawLeft {
+        0%, 100% { transform: translateY(0px); }
+        50%       { transform: translateY(-6px); }
+      }
+      @keyframes pawRight {
+        0%, 100% { transform: translateY(-6px); }
+        50%       { transform: translateY(0px); }
+      }
+      /* Cursor blink */
+      @keyframes cursorBlink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
+      /* Float sparkles */
+      @keyframes floatUp1 {
+        0%   { transform: translateY(0px) translateX(0px); opacity: 0.8; }
+        100% { transform: translateY(-40px) translateX(8px); opacity: 0; }
+      }
+      @keyframes floatUp2 {
+        0%   { transform: translateY(0px) translateX(0px); opacity: 0.6; }
+        100% { transform: translateY(-35px) translateX(-10px); opacity: 0; }
+      }
+      @keyframes floatUp3 {
+        0%   { transform: translateY(0px); opacity: 0.7; }
+        100% { transform: translateY(-45px) translateX(5px); opacity: 0; }
+      }
+      /* Screen glow pulse */
+      @keyframes screenGlow {
+        0%, 100% { opacity: 0.9; }
+        50%       { opacity: 1; }
+      }
+      /* Text typing appear */
+      @keyframes typeText {
+        0%   { width: 0; }
+        100% { width: 120px; }
+      }
+      /* Cat body subtle breathe */
+      @keyframes breathe {
+        0%, 100% { transform: translateY(0px); }
+        50%       { transform: translateY(-2px); }
+      }
+      @keyframes tailWagFull {
+        0%   { d: path("M 370 135 Q 340 150 320 170 Q 300 185 290 175"); }
+        50%  { d: path("M 370 135 Q 360 155 370 175 Q 375 185 365 180"); }
+        100% { d: path("M 370 135 Q 340 150 320 170 Q 300 185 290 175"); }
+      }
+    </style>
+
+    <!-- Screen glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="180" fill="#0d1117" rx="12"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.8" fill="#30363d" opacity="0.5"/>
+  </pattern>
+  <rect width="800" height="180" fill="url(#dots)" rx="12"/>
+
+  <!-- Purple ambient glow behind cat -->
+  <ellipse cx="390" cy="140" rx="120" ry="40" fill="#A78BFA" opacity="0.04" filter="url(#softglow)"/>
+
+  <!-- ===================== LAPTOP ===================== -->
+  <!-- Laptop base -->
+  <rect x="290" y="125" width="200" height="12" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <!-- Laptop screen body -->
+  <rect x="305" y="68" width="170" height="62" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <!-- Screen display -->
+  <rect x="312" y="74" width="156" height="50" rx="3" fill="#0d1117"/>
+
+  <!-- Screen glow -->
+  <rect x="312" y="74" width="156" height="50" rx="3" fill="#A78BFA" opacity="0.04" style="animation: screenGlow 3s ease-in-out infinite;"/>
+
+  <!-- Terminal content on screen -->
+  <!-- Line 1 -->
+  <text x="318" y="87" font-family="Fira Code, monospace" font-size="7" fill="#3fb950">$ git commit -m</text>
+  <!-- Line 2 -->
+  <text x="318" y="98" font-family="Fira Code, monospace" font-size="7" fill="#A78BFA">"feat: cat approved"</text>
+  <!-- Line 3 -->
+  <text x="318" y="109" font-family="Fira Code, monospace" font-size="7" fill="#8b949e">pushing to main...</text>
+  <!-- Line 4 -->
+  <text x="318" y="120" font-family="Fira Code, monospace" font-size="7" fill="#38BDF8">✓ deployed</text>
+  <!-- Blinking cursor -->
+  <rect x="357" y="113" width="5" height="8" fill="#A78BFA" rx="1" style="animation: cursorBlink 1s step-end infinite;"/>
+
+  <!-- Laptop hinge -->
+  <rect x="305" y="128" width="170" height="3" rx="1" fill="#30363d"/>
+
+  <!-- ===================== CAT BODY ===================== -->
+  <g style="animation: breathe 3s ease-in-out infinite;">
+
+    <!-- Body -->
+    <ellipse cx="390" cy="115" rx="32" ry="22" fill="#e6e6e6"/>
+    <!-- Belly patch -->
+    <ellipse cx="390" cy="120" rx="16" ry="12" fill="#f5f5f0"/>
+
+    <!-- Head -->
+    <ellipse cx="390" cy="82" rx="26" ry="24" fill="#e6e6e6"/>
+
+    <!-- Ear left -->
+    <polygon points="366,66 372,50 380,64" fill="#e6e6e6"/>
+    <polygon points="368,64 373,54 379,63" fill="#ffb3c6"/>
+    <!-- Ear right -->
+    <polygon points="400,64 408,50 414,66" fill="#e6e6e6"/>
+    <polygon points="401,63 407,54 412,64" fill="#ffb3c6"/>
+
+    <!-- Eye left -->
+    <ellipse cx="381" cy="82" rx="5" ry="5" fill="#1a1a2e"/>
+    <ellipse cx="381" cy="82" rx="5" fill="#1a1a2e" style="animation: blinkEye 4s ease-in-out infinite;"/>
+    <circle cx="383" cy="80" r="1.5" fill="white"/>
+    <!-- Eye right -->
+    <ellipse cx="399" cy="82" rx="5" ry="5" fill="#1a1a2e"/>
+    <ellipse cx="399" cy="82" rx="5" fill="#1a1a2e" style="animation: blinkEye 4s ease-in-out 0.1s infinite;"/>
+    <circle cx="401" cy="80" r="1.5" fill="white"/>
+
+    <!-- Nose -->
+    <ellipse cx="390" cy="90" rx="3" ry="2" fill="#ffb3c6"/>
+    <!-- Mouth -->
+    <path d="M 387 92 Q 390 95 393 92" fill="none" stroke="#ccc" stroke-width="1"/>
+
+    <!-- Whiskers left -->
+    <line x1="365" y1="89" x2="382" y2="91" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
+    <line x1="365" y1="92" x2="382" y2="92" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
+    <!-- Whiskers right -->
+    <line x1="398" y1="91" x2="415" y2="89" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
+    <line x1="398" y1="92" x2="415" y2="92" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
+
+    <!-- Forehead marking -->
+    <path d="M 385 68 Q 390 63 395 68" fill="none" stroke="#ccc" stroke-width="1.5" opacity="0.4"/>
+
+  </g>
+
+  <!-- ===================== PAWS ===================== -->
+  <!-- Left paw (typing) -->
+  <g style="animation: pawLeft 0.6s ease-in-out infinite;">
+    <ellipse cx="358" cy="128" rx="12" ry="7" fill="#e6e6e6"/>
+    <ellipse cx="353" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
+    <ellipse cx="358" cy="131" rx="4" ry="3" fill="#d4d4d4"/>
+    <ellipse cx="363" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
+  </g>
+  <!-- Right paw (typing offset) -->
+  <g style="animation: pawRight 0.6s ease-in-out infinite;">
+    <ellipse cx="422" cy="128" rx="12" ry="7" fill="#e6e6e6"/>
+    <ellipse cx="417" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
+    <ellipse cx="422" cy="131" rx="4" ry="3" fill="#d4d4d4"/>
+    <ellipse cx="427" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
+  </g>
+
+  <!-- ===================== TAIL ===================== -->
+  <g style="animation: tailWag 1.8s ease-in-out infinite; transform-origin: 370px 130px;">
+    <path d="M 370 132 Q 340 150 318 168 Q 300 180 292 172"
+          fill="none" stroke="#e6e6e6" stroke-width="8" stroke-linecap="round"/>
+    <!-- Tail tip -->
+    <circle cx="292" cy="172" r="6" fill="#d4d4d4"/>
+  </g>
+
+  <!-- ===================== FLOATING CODE SYMBOLS ===================== -->
+  <text x="240" y="90" font-family="Fira Code, monospace" font-size="11" fill="#A78BFA" opacity="0.7"
+        style="animation: floatUp1 2.5s ease-out infinite;">&lt;/&gt;</text>
+
+  <text x="520" y="95" font-family="Fira Code, monospace" font-size="10" fill="#38BDF8" opacity="0.6"
+        style="animation: floatUp2 3s ease-out 0.8s infinite;">{}</text>
+
+  <text x="200" y="120" font-family="Fira Code, monospace" font-size="9" fill="#3fb950" opacity="0.5"
+        style="animation: floatUp3 2.8s ease-out 1.4s infinite;">git</text>
+
+  <text x="555" y="110" font-family="Fira Code, monospace" font-size="9" fill="#e3b341" opacity="0.5"
+        style="animation: floatUp1 3.2s ease-out 0.4s infinite;">🐱</text>
+
+  <text x="165" y="100" font-family="Fira Code, monospace" font-size="8" fill="#A78BFA" opacity="0.4"
+        style="animation: floatUp2 2.6s ease-out 1.8s infinite;">def</text>
+
+  <text x="590" y="130" font-family="Fira Code, monospace" font-size="8" fill="#38BDF8" opacity="0.4"
+        style="animation: floatUp3 3.5s ease-out 0.2s infinite;">#</text>
+
+  <!-- ===================== LEFT TEXT ===================== -->
+  <text x="40" y="60" font-family="Fira Code, monospace" font-size="11" fill="#8b949e" letter-spacing="2">// MadB0i</text>
+  <text x="40" y="82" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">still</text>
+  <text x="40" y="108" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#A78BFA">shipping</text>
+  <text x="40" y="130" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">things</text>
+  <text x="40" y="155" font-family="Fira Code, monospace" font-size="10" fill="#30363d">one commit at a time.</text>
+
+  <!-- ===================== RIGHT TEXT ===================== -->
+  <text x="625" y="75" font-family="Fira Code, monospace" font-size="9" fill="#3fb950">● Python</text>
+  <text x="625" y="93" font-family="Fira Code, monospace" font-size="9" fill="#38BDF8">● Flutter</text>
+  <text x="625" y="111" font-family="Fira Code, monospace" font-size="9" fill="#A78BFA">● Django</text>
+  <text x="625" y="129" font-family="Fira Code, monospace" font-size="9" fill="#e3b341">● Firebase</text>
+  <text x="625" y="147" font-family="Fira Code, monospace" font-size="9" fill="#f78166">● AI Tools</text>
+
+  <!-- Bottom border glow line -->
+  <line x1="40" y1="170" x2="760" y2="170" stroke="#A78BFA" stroke-width="0.5" opacity="0.3"/>
+
+</svg>
