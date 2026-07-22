@@ -18,17 +18,6 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 
 ---
 
-## 🚀 What I'm currently building
-
-| | Project | What it does |
-|---|---|---|
-| 🔥 | **[commit-roast](https://github.com/MadB0i/commit-roast)** | GitHub Action that roasts your lazy commit messages using AI |
-| 🎖️ | **Mission Khaki** | Premium Flutter app for Indian military exam prep — dark/gold UI |
-| 📄 | **AI Resume Analyzer** | Django SaaS with ATS scoring, job matching, and smart PDF parsing |
-| ⚔️ | **Battle Quiz India** | Real-time multiplayer quiz game — esports aesthetic, WebSocket backend |
-| 🤖 | **DualMind** | Two AI agents that autonomously collaborate to finish tasks |
-
----
 
 ## 🛠 Tech I work with
 
