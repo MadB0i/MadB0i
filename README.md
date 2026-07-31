@@ -56,12 +56,11 @@ When I'm not coding, I'm gaming, editing videos, or convincing myself that *one 
 ## 📊 Stats
 
 <div align="center">
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=MadB0i&theme=tokyonight&hide_border=true)
-
+  <img
+    src="https://streak-stats.demolab.com?user=MadB0i&theme=tokyonight&hide_border=true&v=20260731"
+    alt="MadB0i GitHub streak"
+  />
 </div>
-
----
 
 ## 🐾 Contribution snake
 
