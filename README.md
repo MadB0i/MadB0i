@@ -131,44 +131,6 @@ CLI tools, utilities and tiny experiments usually created because something anno
 
 ---
 
-## 🚧 From the workshop
-
-### 🛡️ [KAVACH](https://github.com/MadB0i/KAVACH)
-
-Zero-trust security runtime for AI agents with deterministic policy enforcement and guarded execution.
-
-`Rust` `Security` `AI Agents` `Zero Trust`
-
----
-
-### 🔎 [RepoProof](https://github.com/MadB0i/RepoProof)
-
-A deterministic local-first CLI for finding quality risks in AI-generated and rapidly built repositories.
-
-`TypeScript` `CLI` `Developer Tools`
-
----
-
-### 👻 [BhootOS](https://github.com/MadB0i/BhootOS)
-
-A haunted terminal runtime for interactive horror stories.
-
-Because apparently normal terminals weren't stressful enough.
-
-`TypeScript` `Terminal` `Interactive Fiction`
-
----
-
-### 🐛 [Dev Excuse Generator](https://github.com/MadB0i/Dev_Excuse_Generator)
-
-A tiny excuse generator for bugs, broken builds and production disasters.
-
-Extremely serious developer infrastructure.
-
-`HTML` `JavaScript` `Bad Decisions`
-
----
-
 <div align="center">
 
 <br/>
