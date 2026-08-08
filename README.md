@@ -1,23 +1,27 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1200&color=A78BFA&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Rupjyoti+%F0%9F%91%8B;I+build+things+for+the+web%2C+mobile+%26+AI;Usually+useful.+Sometimes+questionable.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1200&color=A78BFA&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Rupjyoti+%F0%9F%91%8B;I+build+things+for+web%2C+mobile+%26+AI;Useful+things.+Weird+things.+Sometimes+both.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
 
 <br/>
 
-```text
+<pre>
  /\_/\
-( •ᴗ• )   hello, internet.
+( •ᴗ• )
  > ♥ <
-```
+</pre>
 
-### Indie Developer · AI Tinkerer · Professional Side-Project Starter
+<sub>hello, internet.</sub>
 
-<sub>Building useful software, weird experiments, and occasionally both at the same time.</sub>
+<br/><br/>
+
+**Indie Developer · AI Tinkerer · Cat Guy 🐱**
+
+<sub>Building useful software, weird experiments, and things I wish already existed.</sub>
 
 <br/><br/>
 
 <a href="https://github.com/MadB0i?tab=repositories">
-  <img src="https://img.shields.io/badge/Explore_my_projects-18181B?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/EXPLORE_MY_BUILDS-18181B?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 </div>
@@ -26,40 +30,42 @@
 
 ## 👋 Hey, I'm Rupjyoti
 
-I'm an **MCA grad from Assam, India**, working independently across mobile, web, backend, and AI tooling.
+MCA grad from **Assam, India**, building independently across mobile, web, backend and AI.
 
-I mostly enjoy building things from scratch — taking a random idea, figuring out whether it makes any sense, and then coding it anyway.
+Most of my projects start the same way:
 
-These days I'm spending most of my time around **AI agents, local AI, developer tools, security-focused software, and indie products**.
+**“Wait... why doesn't this already exist?”**
 
-When I'm not coding, I'm probably gaming, editing something, or telling myself:
+Then I lose a few evenings building it.
 
-> *“I definitely don't need another side project.”*
+Right now I'm mostly messing around with **AI agents, developer tools, security, local AI and indie software**.
 
-That usually lasts about a day.
+When I'm away from the editor, I'm probably gaming, editing something, or convincing myself that I absolutely do **not** need another side project.
+
+That rarely works.
 
 ---
 
-## ⚡ Right now
+## ⚡ Currently
 
 ```yaml
-working_on:
+building:
   - AI agents & local AI systems
   - Developer tools
-  - Security-focused projects
+  - Security-focused software
   - Mobile apps
 
 learning:
   - Rust
-  - AI system design
-  - Better backend architecture
+  - AI system architecture
+  - Better backend design
 
-status: "shipping > overthinking"
+status: "probably debugging something"
 ```
 
 ---
 
-## 🛠️ Tech I use
+## 🛠 Tech I work with
 
 <div align="center">
 
@@ -75,7 +81,7 @@ status: "shipping > overthinking"
 
 <br/><br/>
 
-### Other stuff I regularly break
+### Systems & AI
 
 <img src="https://skillicons.dev/icons?i=linux,powershell,bash,pytorch&theme=dark" />
 
@@ -83,20 +89,21 @@ status: "shipping > overthinking"
 
 ---
 
-## 🧩 Things I like building
+## 🧩 Stuff I like building
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 AI systems
+### 🧠 AI & Agents
 
-Local-first AI, agents, memory systems, automation and tools that can do more than just return a chat response.
+Local-first AI, autonomous agents, memory systems, automation and tools that can actually do things instead of only chatting.
 
 </td>
+
 <td width="50%" valign="top">
 
-### 🛡️ Security tools
+### 🛡 Security
 
 Permission systems, safer agent execution, zero-trust ideas and software designed to fail safely.
 
@@ -108,14 +115,15 @@ Permission systems, safer agent execution, zero-trust ideas and software designe
 
 ### 📱 Apps
 
-Mobile apps that solve an actual problem — preferably without needing twelve onboarding screens first.
+Mobile products built around an actual use case without turning every screen into a startup landing page.
 
 </td>
+
 <td width="50%" valign="top">
 
-### 🧰 Developer tools
+### 🧰 Dev Tools
 
-CLI tools, utilities and tiny experiments created mostly because something annoyed me enough to build a fix.
+CLI tools, utilities and tiny experiments usually created because something annoyed me enough to fix it myself.
 
 </td>
 </tr>
@@ -123,30 +131,47 @@ CLI tools, utilities and tiny experiments created mostly because something annoy
 
 ---
 
-## 🚧 A few things from my workshop
+## 🚧 From the workshop
 
-### 🛡️ KAVACH
-A zero-trust security runtime for AI agents, written in Rust.
+### 🛡️ [KAVACH](https://github.com/MadB0i/KAVACH)
 
-`Rust` · `Security` · `AI Agents` · `Zero Trust`
+Zero-trust security runtime for AI agents with deterministic policy enforcement and guarded execution.
 
----
-
-### 🧠 JAGIRA AI
-An offline-first personal AI system built around local models, memory, agents, voice, vision and automation.
-
-`Python` · `Local AI` · `Agents` · `Automation`
+`Rust` `Security` `AI Agents` `Zero Trust`
 
 ---
 
-### 🎯 Mission Khaki
-A mobile exam-preparation app focused on police, defence and competitive exam practice.
+### 🔎 [RepoProof](https://github.com/MadB0i/RepoProof)
 
-`Flutter` · `Firebase` · `Mobile`
+A deterministic local-first CLI for finding quality risks in AI-generated and rapidly built repositories.
+
+`TypeScript` `CLI` `Developer Tools`
+
+---
+
+### 👻 [BhootOS](https://github.com/MadB0i/BhootOS)
+
+A haunted terminal runtime for interactive horror stories.
+
+Because apparently normal terminals weren't stressful enough.
+
+`TypeScript` `Terminal` `Interactive Fiction`
+
+---
+
+### 🐛 [Dev Excuse Generator](https://github.com/MadB0i/Dev_Excuse_Generator)
+
+A tiny excuse generator for bugs, broken builds and production disasters.
+
+Extremely serious developer infrastructure.
+
+`HTML` `JavaScript` `Bad Decisions`
 
 ---
 
 <div align="center">
+
+<br/>
 
 <a href="https://github.com/MadB0i?tab=repositories">
 <img src="https://img.shields.io/badge/View_all_projects-0D1117?style=for-the-badge&logo=github&logoColor=white"/>
@@ -158,49 +183,53 @@ A mobile exam-preparation app focused on police, defence and competitive exam pr
 
 ## 🐱 Meanwhile, inside my terminal
 
-```text
+<pre>
 rupjyoti@localhost:~$ git status
 
 On branch main
 
-Changes not staged for commit:
+Changes not staged:
     modified:   one_small_thing
 
 Untracked files:
     another-entire-project/
 
+
 rupjyoti@localhost:~$ cat motivation.txt
 
  /\_/\
-( o.o )   ship it.
+( o.o )
  > ^ <
-```
+
+ship it.
+</pre>
 
 ---
 
 ## 🎮 Outside the editor
 
 ```text
-code        █████████████████░░░
-gaming      ████████████░░░░░░░
+coding      █████████████████░░░
+gaming      ███████████░░░░░░░░
 editing     ███████░░░░░░░░░░░░
-sleep       ██░░░░░░░░░░░░░░░░░
+sleep       ███░░░░░░░░░░░░░░░░
 new ideas   ████████████████████
 ```
 
-The last one is becoming a problem.
+That last bar is becoming a problem.
 
 ---
 
-## 🤝 I'm always interested in
+## 🤝 Always interested in
 
 - interesting open-source projects
-- AI / agent experiments
+- AI and agent experiments
 - developer tooling
+- security projects
 - useful indie products
-- learning something I probably shouldn't start at 2 AM
+- ideas that sound slightly stupid until they work
 
-If you're working on something cool, feel free to say hi.
+If you're building something interesting, feel free to say hi.
 
 ---
 
@@ -209,24 +238,28 @@ If you're working on something cool, feel free to say hi.
 <div align="center">
 
 <a href="https://github.com/MadB0i">
-<img src="https://img.shields.io/badge/GitHub-18181B?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GITHUB-18181B?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="mailto:rupjyotitalukdar98@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
-</div>
+<br/><br/><br/>
 
-<br/>
-
-<div align="center">
-
-```text
+<pre>
  /\_/\
-( -.- )  thanks for scrolling this far
+( •ᴗ• )
  > ^ <
-```
+</pre>
+
+<sub>thanks for scrolling this far.</sub>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=MadB0i&label=PROFILE%20VIEWS&color=A78BFA&style=flat-square" alt="Profile Views" />
+
+<br/><br/>
 
 <sub>probably coding something that wasn't on the roadmap.</sub>
 
