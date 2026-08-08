@@ -1,82 +1,135 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+%F0%9F%91%8B+I'm+Rupjyoti+%E2%80%94+aka+MadB0i;Indie+Dev+%7C+AI+Tinkerer+%7C+Cat+Guy+%F0%9F%90%B1;I+turn+weird+ideas+into+weirder+code" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1200&color=A78BFA&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Rupjyoti+%E2%80%94+aka+MadB0i+%F0%9F%91%8B;Indie+Developer+%E2%80%A2+AI+Tinkerer;Building+weird+ideas+that+actually+work.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
+
+<br/>
+
+
+/_/
+( •ᴗ• ) shipping weird ideas since forever
+
+♥ <
+
+
+### Developer by profession. Builder by bad decisions.
+
+<sub>
+I turn random ideas, late-night thoughts and questionable amounts of caffeine  
+into apps, tools and open-source experiments.
+</sub>
+
+<br/>
+
+<a href="https://github.com/MadB0i?tab=repositories">
+  <img src="https://img.shields.io/badge/EXPLORE_MY_BUILDS-18181B?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
 </div>
 
 ---
 
-```
-  /\_/\
- ( •ᴗ• )   still shipping...
-  > ♥ <
-```
+## 👋 A little about me
 
-I build things — sometimes useful, sometimes just cool. MCA grad from Assam, working independently across mobile, web, and backend. Currently deep into AI tooling and indie SaaS.
+I'm **Rupjyoti**, an MCA grad from Assam, India — currently working independently across **mobile, web, backend and AI tooling**.
 
-When I'm not coding, I'm gaming, editing videos, or convincing myself that *one more side project* is a good idea.
+I like building projects that are either:
 
----
+- genuinely useful
+- technically interesting
+- slightly unnecessary but way too fun to abandon
 
+Right now I'm mostly experimenting with **AI agents, developer tools, security tooling and indie software**.
 
-## 🛠 Tech I work with
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-
-**Frameworks & Tools**
-
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
-
-**Currently exploring**
-
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+When I'm away from the editor, I'm probably gaming, editing something, or starting *another project I definitely had no plans to start.*
 
 ---
 
-## 🐱 Vibe check
+## ⚡ Currently
 
+```yaml
+focus:
+  - AI tooling & autonomous agents
+  - Developer utilities
+  - Security-focused software
+  - Indie products
+
+status: "probably debugging something"
+location: "Assam, India"
+fuel: "☕ + bad ideas"
+🛠️ Tech I work with
 <div align="center">
-  <img src="cat-animation.svg" alt="MadB0i coding cat" />
-</div>
+Languages
+<img src="https://skillicons.dev/icons?i=python,rust,js,ts,dart,java,html,css&theme=dark" />
 
----
+<br/><br/>
 
-## 📊 Stats
+Frameworks & Tools
+<img src="https://skillicons.dev/icons?i=flutter,react,nodejs,fastapi,firebase,sqlite,git,github,docker,vscode&theme=dark" />
 
-<div align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=MadB0i&theme=tokyonight&hide_border=true&v=20260731"
-    alt="MadB0i GitHub streak"
-  />
-</div>
+<br/><br/>
 
-## 🐾 Contribution snake
+Systems & AI
+<img src="https://skillicons.dev/icons?i=linux,powershell,bash,pytorch&theme=dark" /> </div>
+🧪 What I like building
+<table> <tr> <td width="50%" valign="top">
+🧠 AI & Agents
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake-dark.svg" alt="snake" />
-</div>
+Local-first AI systems, autonomous agents, memory systems and tools that can actually do things, not just chat.
 
----
+</td> <td width="50%" valign="top">
+🛡️ Security
 
-## 📬 Reach me
+Permission systems, zero-trust runtimes and software designed around fail-safe behaviour.
 
-[![Gmail](https://img.shields.io/badge/rupjyotitalukdar98@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:rupjyotitalukdar98@gmail.com)
-[![GitHub](https://img.shields.io/badge/@MadB0i-181717?style=flat-square&logo=github)](https://github.com/MadB0i)
+</td> </tr> <tr> <td width="50%" valign="top">
+📱 Products
 
----
+Mobile apps and indie products built with the slightly dangerous philosophy of:
 
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=MadB0i&color=blueviolet&style=flat-square&label=profile+views" alt="profile views" />
-</div>
+idea → build → ship
+
+</td> <td width="50%" valign="top">
+🧰 Dev Tools
+
+CLI tools, automation utilities and small experiments made to remove annoying developer problems.
+
+</td> </tr> </table>
+🚧 Inside the workshop
+┌───────────────────────────────────────────────┐
+│                                               │
+│   idea           ██████████████████  100%     │
+│   overthinking   ██████████████████  100%     │
+│   coding         ███████████████░░░   82%     │
+│   documentation  ██████████░░░░░░░░   54%     │
+│   sleeping       ██░░░░░░░░░░░░░░░░   11%     │
+│                                               │
+└───────────────────────────────────────────────┘
+📊 GitHub
+<div align="center"> <img height="165" src="https://github-readme-stats.vercel.app/api?username=MadB0i&show_icons=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9&hide_rank=false" /> <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=6" /> </div>
+🐱 Developer diagnostics
+$ whoami
+> MadB0i
+
+$ current_mood
+> "this should only take 20 minutes"
+
+$ git status
+> modified: everything
+
+$ bugs
+> features in disguise
+
+$ uptime
+> somehow still running
+📬 Find me somewhere on the internet
+<div align="center"> <a href="https://github.com/MadB0i"> <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white"/> </a> <a href="https://x.com/"> <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/> </a> <a href="mailto:YOUR_EMAIL_HERE"> <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/> </a> </div> <br/> <div align="center">
+ /\_/\
+( o.o )  thanks for visiting
+ > ^ <
+<sub> If something here looks interesting, steal the idea, fork the repo, open an issue — or just leave a ⭐ and disappear mysteriously. </sub>
+
+<br/><br/>
+
+still building. still learning. still shipping.
+
+</div> ```
