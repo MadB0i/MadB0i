@@ -1,14 +1,11 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1200&color=A78BFA&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Rupjyoti+%E2%80%94+aka+MadB0i+%F0%9F%91%8B;Indie+Developer+%E2%80%A2+AI+Tinkerer;Building+weird+ideas+that+actually+work.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1200&color=A78BFA&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Rupjyoti+%E2%80%94;Indie+Developer+%E2%80%A2+AI+Tinkerer;Building+weird+ideas+that+actually+work.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
 
 <br/>
 
 
-/_/
 ( •ᴗ• ) shipping weird ideas since forever
-
-♥ <
 
 
 ### Developer by profession. Builder by bad decisions.
