@@ -143,31 +143,6 @@ CLI tools, utilities and tiny experiments usually created because something anno
 
 ---
 
-## 🐱 Meanwhile, inside my terminal
-
-<pre>
-rupjyoti@localhost:~$ git status
-
-On branch main
-
-Changes not staged:
-    modified:   one_small_thing
-
-Untracked files:
-    another-entire-project/
-
-
-rupjyoti@localhost:~$ cat motivation.txt
-
- /\_/\
-( o.o )
- > ^ <
-
-ship it.
-</pre>
-
----
-
 ## 🎮 Outside the editor
 
 ```text
