@@ -1,198 +1,180 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=A78BFA&height=120&section=header" alt="header" />
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1200&color=A78BFA&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Rupjyoti+%F0%9F%91%8B;I+build+things+for+web%2C+mobile+%26+AI;Useful+things.+Weird+things.+Sometimes+both.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
 
 <br/>
 
-<pre>
- /\_/\
-( •ᴗ• )
- > ♥ <
-</pre>
+<img src="./cat-animation.svg" width="650" alt="cat typing on a laptop while code floats by" />
 
-<sub>hello, internet.</sub>
+<sub>mascot on duty. the work is below.</sub>
 
 <br/><br/>
 
-**Indie Developer · AI Tinkerer · Cat Guy 🐱**
+**Indie developer · AI security · shipped to real users**
 
-<sub>Building useful software, weird experiments, and things I wish already existed.</sub>
+<sub>MCA grad from Assam, India — building solo across AI agents, security tooling, dev tools and mobile apps.</sub>
 
 <br/><br/>
 
 <a href="https://github.com/MadB0i?tab=repositories">
-<img src="https://img.shields.io/badge/EXPLORE_MY_BUILDS-18181B?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-18181B?style=for-the-badge&logo=github&logoColor=white" alt="view all projects" />
 </a>
+<img src="https://img.shields.io/github/followers/MadB0i?style=for-the-badge&color=A78BFA&labelColor=18181B" alt="followers" />
 
 </div>
 
 ---
 
-## 👋 Hey, I'm Rupjyoti
-
-MCA grad from **Assam, India**, building independently across mobile, web, backend and AI.
-
-Most of my projects start the same way:
-
-**“Wait... why doesn't this already exist?”**
-
-Then I lose a few evenings building it.
-
-Right now I'm mostly messing around with **AI agents, developer tools, security, local AI and indie software**.
-
-When I'm away from the editor, I'm probably gaming, editing something, or convincing myself that I absolutely do **not** need another side project.
-
-That rarely works.
-
----
-
-## ⚡ Currently
-
-```yaml
-building:
-  - AI agents & local AI systems
-  - Developer tools
-  - Security-focused software
-  - Mobile apps
-
-learning:
-  - Rust
-  - AI system architecture
-  - Better backend design
-
-status: "probably debugging something"
-```
-
----
-
-## 🛠 Tech I work with
-
-<div align="center">
-
-### Languages
-
-<img src="https://skillicons.dev/icons?i=python,rust,js,ts,dart,java,html,css&theme=dark" />
-
-<br/><br/>
-
-### Frameworks & Tools
-
-<img src="https://skillicons.dev/icons?i=flutter,react,nodejs,fastapi,firebase,sqlite,docker,git,github,vscode&theme=dark" />
-
-<br/><br/>
-
-### Systems & AI
-
-<img src="https://skillicons.dev/icons?i=linux,powershell,bash,pytorch&theme=dark" />
-
-</div>
-
----
-
-## 🧩 Stuff I like building
+## 🐾 Featured work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 AI & Agents
+### [KAVACH](https://github.com/MadB0i/KAVACH)
 
-Local-first AI, autonomous agents, memory systems, automation and tools that can actually do things instead of only chatting.
+**Zero-trust execution layer for AI agents** — every tool call is authorized against an explicit default-deny policy and recorded in a tamper-evident audit chain.
+
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+<img src="https://img.shields.io/badge/zero--trust-A78BFA?style=flat-square" alt="zero-trust" />
 
 </td>
-
 <td width="50%" valign="top">
 
-### 🛡 Security
+### [RepoProof](https://github.com/MadB0i/RepoProof)
 
-Permission systems, safer agent execution, zero-trust ideas and software designed to fail safely.
+**Published CLI that audits AI-generated repos** for quality and security risk — deterministic checks, SARIF output, fully local-first.
+
+`npx repoproof`
+
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/npm/v/repoproof?style=flat-square" alt="npm version" />
+
+<br/>
+<sub><a href="https://www.npmjs.com/package/repoproof">npm</a> · <a href="https://github.com/MadB0i/RepoProof">source</a></sub>
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-### 📱 Apps
+### [Mission Khaki](https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki)
 
-Mobile products built around an actual use case without turning every screen into a startup landing page.
+**Free exam-prep app on Google Play** for Army / Assam Police / SSC / CAPF aspirants — full mock tests with real negative marking and in-test English / Hindi / Assamese translation.
+
+<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
+<img src="https://img.shields.io/badge/Google_Play-414141?style=flat-square&logo=google-play&logoColor=white" alt="Google Play" />
+
+<br/>
+<sub><a href="https://github.com/MadB0i/Mission_Khaki">site repo</a></sub>
 
 </td>
-
 <td width="50%" valign="top">
 
-### 🧰 Dev Tools
+### [C.U.R.E](https://github.com/MadB0i/C.U.R.E)
 
-CLI tools, utilities and tiny experiments usually created because something annoyed me enough to fix it myself.
+**Clean USB Rescue Engine** — finds how software persists across reboots (Run keys, services, WMI…), attaches evidence to every finding, quarantines but never deletes without consent.
+
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+<img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" />
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [KavachBench](https://github.com/MadB0i/KavachBench)
+
+**Research harness behind my first paper (in prep)** — measures Kavach against 42 real prompt-injection attacks from IssueTrojanBench, static analysis plus live baseline-vs-defended agent runs.
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/research-A78BFA?style=flat-square" alt="research" />
+
+</td>
+<td width="50%" valign="top">
+
+### [ProbeLab](https://github.com/MadB0i/ProbeLab)
+
+**Local-first arena for grading AI agents** — grid-world planning plus protocol adherence inside a deny-by-default capability sandbox. Rigorous enough to ship its own negative audit.
+
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+<img src="https://img.shields.io/badge/agent_evals-A78BFA?style=flat-square" alt="agent evals" />
 
 </td>
 </tr>
 </table>
 
----
-
 <div align="center">
 
-<br/>
-
-<a href="https://github.com/MadB0i?tab=repositories">
-<img src="https://img.shields.io/badge/View_all_projects-0D1117?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
+<sub>Also: <a href="https://github.com/MadB0i/WireSong">WireSong</a> — network traffic as generative soundscape (<a href="https://madb0i.github.io/WireSong/">live demo</a>) · <a href="https://github.com/MadB0i/Pehredar">Pehredar</a> — Android root/spyware detection over ADB · <a href="https://github.com/MadB0i/Ustad">Ustad</a> — local LLM distillation studio · <a href="https://github.com/MadB0i?tab=repositories"><b>→ all repos</b></a></sub>
 
 </div>
 
 ---
 
-## 🎮 Outside the editor
-
-```text
-coding      █████████████████░░░
-gaming      ███████████░░░░░░░░
-editing     ███████░░░░░░░░░░░░
-sleep       ███░░░░░░░░░░░░░░░░
-new ideas   ████████████████████
-```
-
-That last bar is becoming a problem.
-
----
-
-## 🤝 Always interested in
-
-- interesting open-source projects
-- AI and agent experiments
-- developer tooling
-- security projects
-- useful indie products
-- ideas that sound slightly stupid until they work
-
-If you're building something interesting, feel free to say hi.
-
----
-
-## 📬 Reach me
+## 🐾 Stack
 
 <div align="center">
 
+<img src="https://skillicons.dev/icons?i=rust,python,ts,js,dart,java&theme=dark" alt="languages" />
+<br/>
+<img src="https://skillicons.dev/icons?i=flutter,react,nodejs,fastapi,tauri,firebase,sqlite,docker,git,github,vscode&theme=dark" alt="frameworks and tools" />
+<br/>
+<img src="https://skillicons.dev/icons?i=linux,bash,powershell,pytorch&theme=dark" alt="systems and ai" />
+
+</div>
+
+---
+
+## 🐾 Stats
+
+<div align="center">
+
+<img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=MadB0i&show_icons=true&title_color=A78BFA&icon_color=A78BFA&text_color=E6EDF3&bg_color=0D1117&border_color=30363D&hide_border=false&count_private=true" alt="github stats" />
+<img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&langs_count=6&title_color=A78BFA&text_color=E6EDF3&bg_color=0D1117&border_color=30363D&hide_border=false" alt="top languages" />
+<br/>
+<img height="170" src="https://streak-stats.demolab.com?user=MadB0i&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideNums=E6EDF3&sideLabels=8B949E&dates=8B949E&background=0D1117&border=30363D&stroke=30363D" alt="streak stats" />
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake.svg" />
+</picture>
+
+</div>
+
+---
+
+## 🐾 Contact
+
+<div align="center">
+
+<sub>Open to interesting open-source, agent-security and dev-tooling collaborations.</sub>
+
+<br/><br/>
+
 <a href="https://github.com/MadB0i">
-<img src="https://img.shields.io/badge/GITHUB-18181B?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GITHUB-18181B?style=for-the-badge&logo=github&logoColor=white" alt="github" />
 </a>
-
 <a href="mailto:rupjyotitalukdar98@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" />
 </a>
 
-<br/><br/><br/>
+<br/><br/>
 
 <pre>
- /\_/\
-( •ᴗ• )
- > ^ <
+  /\_/\
+ ( ^ᴗ^ )
+  > ♥ <
 </pre>
 
 <sub>thanks for scrolling this far.</sub>
 
-<br/><br/>
+<br/>
 
 <img src="https://komarev.com/ghpvc/?username=MadB0i&label=PROFILE%20VIEWS&color=A78BFA&style=flat-square" alt="Profile Views" />
 
@@ -205,3 +187,5 @@ If you're building something interesting, feel free to say hi.
 **still learning · still building · still shipping**
 
 </div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=A78BFA&height=100&section=footer" alt="footer" />
