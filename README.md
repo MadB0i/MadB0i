@@ -1,22 +1,20 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=A78BFA&height=120&section=header" alt="header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=slice&color=A78BFA&height=110&section=header" alt="" />
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1200&color=A78BFA&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Rupjyoti+%F0%9F%91%8B;I+build+things+for+web%2C+mobile+%26+AI;Useful+things.+Weird+things.+Sometimes+both.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1200&color=A78BFA&center=true&vCenter=true&width=680&lines=Hey%2C+I'm+Rupjyoti+%F0%9F%91%8B;I+build+things+for+web%2C+mobile+%26+AI;Useful+things.+Weird+things.+Sometimes+both.;Still+shipping...+%F0%9F%90%B1" alt="Typing SVG" />
 
 <br/>
 
-<img src="./cat-animation.svg" width="650" alt="cat typing on a laptop while code floats by" />
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/200w.gif" width="220" alt="a real cat, using a real laptop, like a professional" />
 
-<sub>mascot on duty. the work is below.</sub>
-
-<br/><br/>
+<br/>
 
 **Indie developer · AI security · shipped to real users**
 
 <sub>MCA grad from Assam, India — building solo across AI agents, security tooling, dev tools and mobile apps.</sub>
 
-<br/><br/>
+<br/>
 
 <a href="https://github.com/MadB0i?tab=repositories">
 <img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-18181B?style=for-the-badge&logo=github&logoColor=white" alt="view all projects" />
@@ -27,7 +25,21 @@
 
 </div>
 
----
+<img src="./neon-divider.svg" width="100%" alt="" />
+
+<!-- ══ operator ══ -->
+
+```text
+   /\_/\
+  ( •ᴗ• )  ▸ status:   SHIPPING
+   > ^ <   ▸ stack:    rust · python · typescript · flutter
+           ▸ base:     assam, india
+           ▸ stacktrace: 99% cat naps, 1% shipping
+```
+
+Most of my projects start the same way: **"Wait... why doesn't this already exist?"** — then I lose a few evenings building it.
+
+<img src="./neon-divider.svg" width="100%" alt="" />
 
 <!-- ══ featured ══ -->
 
@@ -54,7 +66,6 @@
 `npx repoproof`
 
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-<img src="https://img.shields.io/npm/v/repoproof?style=flat-square" alt="npm version" />
 
 <br/>
 <sub><a href="https://www.npmjs.com/package/repoproof">npm</a> · <a href="https://github.com/MadB0i/RepoProof">source</a></sub>
@@ -116,7 +127,7 @@
 
 </div>
 
----
+<img src="./neon-divider.svg" width="100%" alt="" />
 
 <!-- ══ stack ══ -->
 
@@ -132,7 +143,7 @@
 
 </div>
 
----
+<img src="./neon-divider.svg" width="100%" alt="" />
 
 <!-- ══ stats ══ -->
 
@@ -145,7 +156,7 @@
 <br/>
 <img height="170" src="https://streak-stats.demolab.com?user=MadB0i&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideNums=E6EDF3&sideLabels=8B949E&dates=8B949E&background=0D1117&border=30363D&stroke=30363D" alt="streak stats" />
 
-<br/><br/>
+<br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake-dark.svg" />
@@ -155,7 +166,15 @@
 
 </div>
 
----
+<img src="./neon-divider.svg" width="100%" alt="" />
+
+<!-- ══ mascot ══ -->
+
+<div align="center">
+
+<img src="./cat-animation.svg" width="640" alt="neon cat mascot, on duty" />
+
+</div>
 
 <!-- ══ contact ══ -->
 
@@ -199,4 +218,4 @@
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=A78BFA&height=100&section=footer" alt="footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=slice&color=A78BFA&height=90&section=footer" alt="" />

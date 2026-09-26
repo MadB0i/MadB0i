@@ -1,227 +1,164 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260">
   <defs>
-    <style>
-      /* Tail wag */
-      @keyframes tailWag {
-        0%   { transform: rotate(-20deg); transform-origin: 380px 130px; }
-        50%  { transform: rotate(20deg);  transform-origin: 380px 130px; }
-        100% { transform: rotate(-20deg); transform-origin: 380px 130px; }
-      }
-      /* Eye blink */
-      @keyframes blink {
-        0%, 90%, 100% { scaleY: 1; }
-        95% { transform: scaleY(0.05); }
-      }
-      @keyframes blinkEye {
-        0%, 88%, 100% { ry: 5; }
-        93% { ry: 0.5; }
-      }
-      /* Paw typing */
-      @keyframes pawLeft {
-        0%, 100% { transform: translateY(0px); }
-        50%       { transform: translateY(-6px); }
-      }
-      @keyframes pawRight {
-        0%, 100% { transform: translateY(-6px); }
-        50%       { transform: translateY(0px); }
-      }
-      /* Cursor blink */
-      @keyframes cursorBlink {
-        0%, 100% { opacity: 1; }
-        50%       { opacity: 0; }
-      }
-      /* Float sparkles */
-      @keyframes floatUp1 {
-        0%   { transform: translateY(0px) translateX(0px); opacity: 0.8; }
-        100% { transform: translateY(-40px) translateX(8px); opacity: 0; }
-      }
-      @keyframes floatUp2 {
-        0%   { transform: translateY(0px) translateX(0px); opacity: 0.6; }
-        100% { transform: translateY(-35px) translateX(-10px); opacity: 0; }
-      }
-      @keyframes floatUp3 {
-        0%   { transform: translateY(0px); opacity: 0.7; }
-        100% { transform: translateY(-45px) translateX(5px); opacity: 0; }
-      }
-      /* Screen glow pulse */
-      @keyframes screenGlow {
-        0%, 100% { opacity: 0.9; }
-        50%       { opacity: 1; }
-      }
-      /* Text typing appear */
-      @keyframes typeText {
-        0%   { width: 0; }
-        100% { width: 120px; }
-      }
-      /* Cat body subtle breathe */
-      @keyframes breathe {
-        0%, 100% { transform: translateY(0px); }
-        50%       { transform: translateY(-2px); }
-      }
-      @keyframes tailWagFull {
-        0%   { d: path("M 370 135 Q 340 150 320 170 Q 300 185 290 175"); }
-        50%  { d: path("M 370 135 Q 360 155 370 175 Q 375 185 365 180"); }
-        100% { d: path("M 370 135 Q 340 150 320 170 Q 300 185 290 175"); }
-      }
-    </style>
-
-    <!-- Screen glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <filter id="pGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="softglow">
-      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+    <filter id="cGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="b"/><feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <pattern id="scan" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="1" fill="#A78BFA" opacity="0.5"/>
+    </pattern>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="0.7" fill="#A78BFA" opacity="0.16"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="900" height="260" rx="14"/>
+    </clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="800" height="180" fill="#0d1117" rx="12"/>
+  <g clip-path="url(#frame)">
+    <rect width="900" height="260" fill="#05060A"/>
+    <rect width="900" height="260" fill="url(#dots)"/>
 
-  <!-- Subtle dot grid -->
-  <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-    <circle cx="12" cy="12" r="0.8" fill="#30363d" opacity="0.5"/>
-  </pattern>
-  <rect width="800" height="180" fill="url(#dots)" rx="12"/>
+    <!-- perspective floor grid -->
+    <g stroke="#22D3EE" stroke-width="0.6" opacity="0.22">
+      <line x1="0" y1="196" x2="900" y2="196"/>
+      <line x1="0" y1="206" x2="900" y2="206"/>
+      <line x1="0" y1="219" x2="900" y2="219"/>
+      <line x1="0" y1="236" x2="900" y2="236"/>
+      <line x1="450" y1="186" x2="450" y2="260"/>
+      <line x1="330" y1="186" x2="240" y2="260"/>
+      <line x1="570" y1="186" x2="660" y2="260"/>
+      <line x1="390" y1="186" x2="350" y2="260"/>
+      <line x1="510" y1="186" x2="550" y2="260"/>
+    </g>
 
-  <!-- Purple ambient glow behind cat -->
-  <ellipse cx="390" cy="140" rx="120" ry="40" fill="#A78BFA" opacity="0.04" filter="url(#softglow)"/>
+    <!-- horizon glow -->
+    <rect x="0" y="193" width="900" height="3" fill="#22D3EE" opacity="0.5" filter="url(#cGlow)">
+      <animate attributeName="opacity" values="0.25;0.7;0.25" dur="5s" repeatCount="indefinite"/>
+    </rect>
 
-  <!-- ===================== LAPTOP ===================== -->
-  <!-- Laptop base -->
-  <rect x="290" y="125" width="200" height="12" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-  <!-- Laptop screen body -->
-  <rect x="305" y="68" width="170" height="62" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-  <!-- Screen display -->
-  <rect x="312" y="74" width="156" height="50" rx="3" fill="#0d1117"/>
+    <!-- ================= HUD CHROME ================= -->
+    <g stroke="#A78BFA" stroke-width="1.4" fill="none" opacity="0.85">
+      <path d="M16 34 L16 16 L40 16"/>
+      <path d="M884 34 L884 16 L860 16"/>
+      <path d="M16 226 L16 244 L40 244"/>
+      <path d="M884 226 L884 244 L860 244"/>
+    </g>
 
-  <!-- Screen glow -->
-  <rect x="312" y="74" width="156" height="50" rx="3" fill="#A78BFA" opacity="0.04" style="animation: screenGlow 3s ease-in-out infinite;"/>
+    <g font-family="Fira Code, ui-monospace, monospace" font-size="10" letter-spacing="1.6" fill="#A78BFA" opacity="0.9">
+      <text x="60" y="30">MASCOT.EXE</text>
+      <text x="848" y="30" fill="#22D3EE" text-anchor="end">ON_DUTY</text>
+      <text x="52" y="240" fill="#5B6478">// supervising every commit</text>
+      <text x="848" y="240" fill="#5B6478" text-anchor="end">v2.0</text>
+    </g>
 
-  <!-- Terminal content on screen -->
-  <!-- Line 1 -->
-  <text x="318" y="87" font-family="Fira Code, monospace" font-size="7" fill="#3fb950">$ git commit -m</text>
-  <!-- Line 2 -->
-  <text x="318" y="98" font-family="Fira Code, monospace" font-size="7" fill="#A78BFA">"feat: cat approved"</text>
-  <!-- Line 3 -->
-  <text x="318" y="109" font-family="Fira Code, monospace" font-size="7" fill="#8b949e">pushing to main...</text>
-  <!-- Line 4 -->
-  <text x="318" y="120" font-family="Fira Code, monospace" font-size="7" fill="#38BDF8">✓ deployed</text>
-  <!-- Blinking cursor -->
-  <rect x="357" y="113" width="5" height="8" fill="#A78BFA" rx="1" style="animation: cursorBlink 1s step-end infinite;"/>
+    <circle cx="48" cy="26" r="3.2" fill="#22D3EE" filter="url(#cGlow)">
+      <animate attributeName="opacity" values="1;0.15;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
 
-  <!-- Laptop hinge -->
-  <rect x="305" y="128" width="170" height="3" rx="1" fill="#30363d"/>
+    <!-- ================= FLOATING GLYPHS ================= -->
+    <g font-family="Fira Code, ui-monospace, monospace" font-size="13" fill="#A78BFA" filter="url(#pGlow)">
+      <text x="150" y="120" opacity="0.75">&lt;/&gt;</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -14" dur="3s" repeatCount="indefinite"/>
+      <text x="700" y="132" opacity="0.6" fill="#22D3EE">&#123;&#125;</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -12" dur="3.6s" begin="0.6s" repeatCount="indefinite"/>
+      <text x="215" y="168" opacity="0.5" font-size="11">fn</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10" dur="4.2s" begin="1.2s" repeatCount="indefinite"/>
+      <text x="655" y="176" opacity="0.5" font-size="11" fill="#22D3EE">$</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -11" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>
+    </g>
 
-  <!-- ===================== CAT BODY ===================== -->
-  <g style="animation: breathe 3s ease-in-out infinite;">
+    <!-- ================= NEON CAT ================= -->
+    <g filter="url(#pGlow)" fill="none" stroke="#A78BFA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
 
-    <!-- Body -->
-    <ellipse cx="390" cy="115" rx="32" ry="22" fill="#e6e6e6"/>
-    <!-- Belly patch -->
-    <ellipse cx="390" cy="120" rx="16" ry="12" fill="#f5f5f0"/>
+      <!-- tail -->
+      <g>
+        <path d="M492 158 Q 540 168 556 140 Q 566 122 548 116"/>
+        <animateTransform attributeName="transform" type="rotate"
+                          values="-7 492 158; 9 492 158; -7 492 158"
+                          dur="3.4s" repeatCount="indefinite"/>
+      </g>
 
-    <!-- Head -->
-    <ellipse cx="390" cy="82" rx="26" ry="24" fill="#e6e6e6"/>
+      <!-- body -->
+      <path d="M418 158 Q 414 190 450 192 Q 486 190 482 158"/>
 
-    <!-- Ear left -->
-    <polygon points="366,66 372,50 380,64" fill="#e6e6e6"/>
-    <polygon points="368,64 373,54 379,63" fill="#ffb3c6"/>
-    <!-- Ear right -->
-    <polygon points="400,64 408,50 414,66" fill="#e6e6e6"/>
-    <polygon points="401,63 407,54 412,64" fill="#ffb3c6"/>
+      <!-- head -->
+      <ellipse cx="450" cy="128" rx="30" ry="27"/>
 
-    <!-- Eye left -->
-    <ellipse cx="381" cy="82" rx="5" ry="5" fill="#1a1a2e"/>
-    <ellipse cx="381" cy="82" rx="5" fill="#1a1a2e" style="animation: blinkEye 4s ease-in-out infinite;"/>
-    <circle cx="383" cy="80" r="1.5" fill="white"/>
-    <!-- Eye right -->
-    <ellipse cx="399" cy="82" rx="5" ry="5" fill="#1a1a2e"/>
-    <ellipse cx="399" cy="82" rx="5" fill="#1a1a2e" style="animation: blinkEye 4s ease-in-out 0.1s infinite;"/>
-    <circle cx="401" cy="80" r="1.5" fill="white"/>
+      <!-- ears -->
+      <path d="M425 108 L429 88 L444 104"/>
+      <path d="M475 108 L471 88 L456 104"/>
 
-    <!-- Nose -->
-    <ellipse cx="390" cy="90" rx="3" ry="2" fill="#ffb3c6"/>
-    <!-- Mouth -->
-    <path d="M 387 92 Q 390 95 393 92" fill="none" stroke="#ccc" stroke-width="1"/>
+      <!-- inner ears -->
+      <path d="M430 106 L432 95 L440 105" stroke="#22D3EE" stroke-width="1.3" opacity="0.8"/>
+      <path d="M470 106 L468 95 L460 105" stroke="#22D3EE" stroke-width="1.3" opacity="0.8"/>
 
-    <!-- Whiskers left -->
-    <line x1="365" y1="89" x2="382" y2="91" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
-    <line x1="365" y1="92" x2="382" y2="92" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
-    <!-- Whiskers right -->
-    <line x1="398" y1="91" x2="415" y2="89" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
-    <line x1="398" y1="92" x2="415" y2="92" stroke="#ccc" stroke-width="0.8" opacity="0.7"/>
+      <!-- eyes -->
+      <ellipse cx="439" cy="127" rx="5" ry="6" fill="#22D3EE" stroke="none">
+        <animate attributeName="ry" values="6;6;0.4;6;6" keyTimes="0;0.86;0.9;0.94;1" dur="4.4s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="462" cy="127" rx="5" ry="6" fill="#22D3EE" stroke="none">
+        <animate attributeName="ry" values="6;6;0.4;6;6" keyTimes="0;0.86;0.9;0.94;1" dur="4.4s" begin="0.12s" repeatCount="indefinite"/>
+      </ellipse>
 
-    <!-- Forehead marking -->
-    <path d="M 385 68 Q 390 63 395 68" fill="none" stroke="#ccc" stroke-width="1.5" opacity="0.4"/>
+      <!-- nose + mouth -->
+      <path d="M446 138 L454 138 L450 143 Z" fill="#22D3EE" stroke="none" filter="url(#cGlow)"/>
+      <path d="M450 143 L450 147" stroke-width="1.6"/>
+      <path d="M443 149 Q 450 154 457 149" stroke-width="1.6"/>
 
+      <!-- whiskers -->
+      <g stroke-width="1.1" opacity="0.75">
+        <line x1="424" y1="136" x2="406" y2="132"/>
+        <line x1="424" y1="142" x2="406" y2="144"/>
+        <line x1="476" y1="136" x2="494" y2="132"/>
+        <line x1="476" y1="142" x2="494" y2="144"/>
+      </g>
+    </g>
+
+    <!-- ================= NEON LAPTOP ================= -->
+    <g filter="url(#cGlow)" stroke="#22D3EE" stroke-width="2" fill="none" stroke-linejoin="round">
+      <rect x="404" y="196" width="92" height="40" rx="4" fill="#05060A"/>
+      <g stroke-width="1.2" opacity="0.85">
+        <line x1="414" y1="208" x2="452" y2="208"/>
+        <line x1="414" y1="216" x2="472" y2="216"/>
+        <line x1="414" y1="224" x2="440" y2="224"/>
+      </g>
+      <path d="M396 236 L504 236"/>
+      <circle cx="490" cy="207" r="2.4" fill="#22D3EE" stroke="none">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- paws on keyboard -->
+    <g fill="#A78BFA" filter="url(#pGlow)">
+      <ellipse cx="404" cy="238" rx="12" ry="5">
+        <animate attributeName="cy" values="238;234;238" dur="0.7s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="496" cy="238" rx="12" ry="5">
+        <animate attributeName="cy" values="234;238;234" dur="0.7s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- ================= SCANLINES ================= -->
+    <g opacity="0.16">
+      <rect x="0" y="0" width="900" height="260" fill="url(#scan)">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 4" dur="0.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- vignette sweep -->
+    <rect x="0" y="0" width="900" height="130" fill="#A78BFA" opacity="0.05">
+      <animate attributeName="y" values="-130;260" dur="7s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
-  <!-- ===================== PAWS ===================== -->
-  <!-- Left paw (typing) -->
-  <g style="animation: pawLeft 0.6s ease-in-out infinite;">
-    <ellipse cx="358" cy="128" rx="12" ry="7" fill="#e6e6e6"/>
-    <ellipse cx="353" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
-    <ellipse cx="358" cy="131" rx="4" ry="3" fill="#d4d4d4"/>
-    <ellipse cx="363" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
-  </g>
-  <!-- Right paw (typing offset) -->
-  <g style="animation: pawRight 0.6s ease-in-out infinite;">
-    <ellipse cx="422" cy="128" rx="12" ry="7" fill="#e6e6e6"/>
-    <ellipse cx="417" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
-    <ellipse cx="422" cy="131" rx="4" ry="3" fill="#d4d4d4"/>
-    <ellipse cx="427" cy="130" rx="4" ry="3" fill="#d4d4d4"/>
-  </g>
-
-  <!-- ===================== TAIL ===================== -->
-  <g style="animation: tailWag 1.8s ease-in-out infinite; transform-origin: 370px 130px;">
-    <path d="M 370 132 Q 340 150 318 168 Q 300 180 292 172"
-          fill="none" stroke="#e6e6e6" stroke-width="8" stroke-linecap="round"/>
-    <!-- Tail tip -->
-    <circle cx="292" cy="172" r="6" fill="#d4d4d4"/>
-  </g>
-
-  <!-- ===================== FLOATING CODE SYMBOLS ===================== -->
-  <text x="240" y="90" font-family="Fira Code, monospace" font-size="11" fill="#A78BFA" opacity="0.7"
-        style="animation: floatUp1 2.5s ease-out infinite;">&lt;/&gt;</text>
-
-  <text x="520" y="95" font-family="Fira Code, monospace" font-size="10" fill="#38BDF8" opacity="0.6"
-        style="animation: floatUp2 3s ease-out 0.8s infinite;">{}</text>
-
-  <text x="200" y="120" font-family="Fira Code, monospace" font-size="9" fill="#3fb950" opacity="0.5"
-        style="animation: floatUp3 2.8s ease-out 1.4s infinite;">git</text>
-
-  <text x="555" y="110" font-family="Fira Code, monospace" font-size="9" fill="#e3b341" opacity="0.5"
-        style="animation: floatUp1 3.2s ease-out 0.4s infinite;">🐱</text>
-
-  <text x="165" y="100" font-family="Fira Code, monospace" font-size="8" fill="#A78BFA" opacity="0.4"
-        style="animation: floatUp2 2.6s ease-out 1.8s infinite;">def</text>
-
-  <text x="590" y="130" font-family="Fira Code, monospace" font-size="8" fill="#38BDF8" opacity="0.4"
-        style="animation: floatUp3 3.5s ease-out 0.2s infinite;">#</text>
-
-  <!-- ===================== LEFT TEXT ===================== -->
-  <text x="40" y="60" font-family="Fira Code, monospace" font-size="11" fill="#8b949e" letter-spacing="2">// MadB0i</text>
-  <text x="40" y="82" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">still</text>
-  <text x="40" y="108" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#A78BFA">shipping</text>
-  <text x="40" y="130" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">things</text>
-  <text x="40" y="155" font-family="Fira Code, monospace" font-size="10" fill="#30363d">one commit at a time.</text>
-
-  <!-- ===================== RIGHT TEXT ===================== -->
-  <text x="625" y="75" font-family="Fira Code, monospace" font-size="9" fill="#3fb950">● Python</text>
-  <text x="625" y="93" font-family="Fira Code, monospace" font-size="9" fill="#38BDF8">● Flutter</text>
-  <text x="625" y="111" font-family="Fira Code, monospace" font-size="9" fill="#A78BFA">● Django</text>
-  <text x="625" y="129" font-family="Fira Code, monospace" font-size="9" fill="#e3b341">● Firebase</text>
-  <text x="625" y="147" font-family="Fira Code, monospace" font-size="9" fill="#f78166">● AI Tools</text>
-
-  <!-- Bottom border glow line -->
-  <line x1="40" y1="170" x2="760" y2="170" stroke="#A78BFA" stroke-width="0.5" opacity="0.3"/>
-
+  <rect x="0.7" y="0.7" width="898.6" height="258.6" rx="14" fill="none" stroke="#A78BFA" stroke-width="1.2" opacity="0.4"/>
 </svg>

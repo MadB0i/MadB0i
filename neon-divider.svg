@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 28" width="900" height="28">
+  <defs>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="18%"  stop-color="#A78BFA" stop-opacity="1"/>
+      <stop offset="50%"  stop-color="#E9D5FF" stop-opacity="1"/>
+      <stop offset="82%"  stop-color="#22D3EE" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-400%" width="200%" height="900%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="13" width="900" height="2" rx="1" fill="url(#neonGrad)" opacity="0.35"/>
+
+  <g filter="url(#softGlow)">
+    <rect x="0" y="13.2" width="900" height="1.4" rx="0.7" fill="url(#neonGrad)">
+      <animate attributeName="x" values="-300;900" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="300;300" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <circle cx="120" cy="14" r="2.2" fill="#A78BFA">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="14" r="2.2" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
