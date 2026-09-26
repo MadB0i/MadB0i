@@ -112,7 +112,7 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 ### [ProbeLab](https://github.com/MadB0i/ProbeLab)
 
-**Local-first arena for grading AI agents** — grid-world planning plus protocol adherence inside a deny-by-default capability sandbox. Rigorous enough to ship its own negative audit.
+**Local-first environment for evaluating AI agents** — grid-world planning plus protocol adherence inside a deny-by-default capability sandbox. It ships the audit that says how far that currently goes.
 
 <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
 <img src="https://img.shields.io/badge/agent_evals-A78BFA?style=flat-square" alt="agent evals" />
@@ -182,7 +182,7 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 <div align="center">
 
-<sub>Open to interesting open-source, agent-security and dev-tooling collaborations.</sub>
+<sub>mail me if you're building agent-security or devtool stuff.</sub>
 
 <br/><br/>
 
