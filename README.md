@@ -21,11 +21,15 @@
 <a href="https://github.com/MadB0i?tab=repositories">
 <img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-18181B?style=for-the-badge&logo=github&logoColor=white" alt="view all projects" />
 </a>
-<img src="https://img.shields.io/github/followers/MadB0i?style=for-the-badge&color=A78BFA&labelColor=18181B" alt="followers" />
+<a href="https://github.com/MadB0i/MadB0i">
+<img src="https://img.shields.io/github/stars/MadB0i/MadB0i?style=for-the-badge&color=A78BFA&labelColor=18181B" alt="stars" />
+</a>
 
 </div>
 
 ---
+
+<!-- ══ featured ══ -->
 
 ## 🐾 Featured work
 
@@ -114,6 +118,8 @@
 
 ---
 
+<!-- ══ stack ══ -->
+
 ## 🐾 Stack
 
 <div align="center">
@@ -127,6 +133,8 @@
 </div>
 
 ---
+
+<!-- ══ stats ══ -->
 
 ## 🐾 Stats
 
@@ -148,6 +156,8 @@
 </div>
 
 ---
+
+<!-- ══ contact ══ -->
 
 ## 🐾 Contact
 
@@ -173,6 +183,7 @@
 </pre>
 
 <sub>thanks for scrolling this far.</sub>
+<sub>cat approves. <a href="https://github.com/MadB0i/MadB0i">star button</a> bhi upar hi hai ↑ — just saying.</sub>
 
 <br/>
 
