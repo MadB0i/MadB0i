@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 26" width="44" height="26">
+  <g fill="#A78BFA">
+    <ellipse cx="22" cy="18.5" rx="7.6" ry="6.1">
+      <animate attributeName="opacity" values="0.55;0.85;0.55" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="11.5" cy="10.5" rx="2.9" ry="3.6" transform="rotate(-18 11.5 10.5)">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="18.4" cy="6.6" rx="2.8" ry="3.6" transform="rotate(-7 18.4 6.6)">
+      <animate attributeName="opacity" values="0.55;0.85;0.55" dur="4s" begin="0.2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="25.8" cy="6.6" rx="2.8" ry="3.6" transform="rotate(7 25.8 6.6)">
+      <animate attributeName="opacity" values="0.55;0.85;0.55" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="32.6" cy="10.5" rx="2.9" ry="3.6" transform="rotate(18 32.6 10.5)">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" begin="0.6s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg>

@@ -25,7 +25,7 @@
 
 </div>
 
-<img src="./neon-divider.svg" width="100%" alt="" />
+<p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
 <!-- ══ operator ══ -->
 
@@ -39,7 +39,7 @@
 
 Most of my projects start the same way: **"Wait... why doesn't this already exist?"** — then I lose a few evenings building it.
 
-<img src="./neon-divider.svg" width="100%" alt="" />
+<p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
 <!-- ══ featured ══ -->
 
@@ -127,7 +127,7 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 </div>
 
-<img src="./neon-divider.svg" width="100%" alt="" />
+<p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
 <!-- ══ stack ══ -->
 
@@ -143,7 +143,7 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 </div>
 
-<img src="./neon-divider.svg" width="100%" alt="" />
+<p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
 <!-- ══ stats ══ -->
 
@@ -166,7 +166,7 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 </div>
 
-<img src="./neon-divider.svg" width="100%" alt="" />
+<p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
 <!-- ══ mascot ══ -->
 
