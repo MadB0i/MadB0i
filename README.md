@@ -159,9 +159,9 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cat-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cat.svg" />
+  <img alt="a cat walking across this year's contribution graph" src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cat.svg" />
 </picture>
 
 </div>
