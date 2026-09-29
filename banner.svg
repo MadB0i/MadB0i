@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="120" preserveAspectRatio="none" role="img" aria-label="a soft purple divider with a cat paw in the middle">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.85"/>
+      <stop offset="82%" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+  </defs>
+
+  <g>
+    <rect x="0" y="57" width="1200" height="6" fill="url(#bar)" rx="3"/>
+    <rect x="0" y="58.6" width="1200" height="2.8" fill="url(#bar)" rx="1.4" opacity="0.7" filter="url(#soft)">
+      <animate attributeName="opacity" values="0.35;0.75;0.35" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g transform="translate(600 53) scale(1.25)" fill="#A78BFA">
+    <ellipse cx="0" cy="6" rx="11" ry="8.6">
+      <animate attributeName="opacity" values="0.5;0.85;0.5" dur="4.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="-14" cy="-5" rx="4.2" ry="5.2" transform="rotate(-18 -14 -5)">
+      <animate attributeName="opacity" values="0.45;0.78;0.45" dur="4.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="-4.8" cy="-11" rx="4" ry="5.2" transform="rotate(-7 -4.8 -11)">
+      <animate attributeName="opacity" values="0.5;0.85;0.5" dur="4.5s" begin="0.2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="5.6" cy="-11" rx="4" ry="5.2" transform="rotate(7 5.6 -11)">
+      <animate attributeName="opacity" values="0.5;0.85;0.5" dur="4.5s" begin="0.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="14.6" cy="-5" rx="4.2" ry="5.2" transform="rotate(18 14.6 -5)">
+      <animate attributeName="opacity" values="0.45;0.78;0.45" dur="4.5s" begin="0.6s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=slice&color=A78BFA&height=110&section=header" alt="" />
+<img width="100%" src="./banner.svg" alt="" />
 
 <div align="center">
 
@@ -230,4 +230,4 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=slice&color=A78BFA&height=90&section=footer" alt="" />
+<img width="100%" src="./banner.svg" alt="" />
