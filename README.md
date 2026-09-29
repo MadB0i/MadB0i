@@ -151,10 +151,22 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 <div align="center">
 
-<img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=MadB0i&show_icons=true&title_color=A78BFA&icon_color=A78BFA&text_color=E6EDF3&bg_color=0D1117&border_color=30363D&hide_border=false&count_private=true" alt="github stats" />
-<img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&langs_count=6&title_color=A78BFA&text_color=E6EDF3&bg_color=0D1117&border_color=30363D&hide_border=false" alt="top languages" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://denvercoder1-github-readme-stats.vercel.app/api/?username=MadB0i&show_icons=true&title_color=A78BFA&icon_color=A78BFA&text_color=E6EDF3&ring_color=A78BFA&bg_color=120,1a1030,0d1117&hide_border=true&border_radius=16&count_private=true&hide=contribs&include_all_commits=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://denvercoder1-github-readme-stats.vercel.app/api/?username=MadB0i&show_icons=true&title_color=5B21B6&icon_color=7C3AED&text_color=1F2937&ring_color=7C3AED&bg_color=120,F3F0FF,FFFFFF&hide_border=true&border_radius=16&count_private=true&hide=contribs&include_all_commits=true" />
+  <img height="170" alt="github stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=MadB0i&show_icons=true&title_color=A78BFA&icon_color=A78BFA&text_color=E6EDF3&ring_color=A78BFA&bg_color=120,1a1030,0d1117&hide_border=true&border_radius=16&count_private=true&hide=contribs&include_all_commits=true" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&langs_count=6&title_color=A78BFA&text_color=E6EDF3&bg_color=120,1a1030,0d1117&hide_border=true&border_radius=16" />
+  <source media="(prefers-color-scheme: light)" srcset="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&langs_count=6&title_color=5B21B6&text_color=1F2937&bg_color=120,F3F0FF,FFFFFF&hide_border=true&border_radius=16" />
+  <img height="170" alt="most used languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=MadB0i&layout=compact&langs_count=6&title_color=A78BFA&text_color=E6EDF3&bg_color=120,1a1030,0d1117&hide_border=true&border_radius=16" />
+</picture>
 <br/>
-<img height="170" src="https://streak-stats.demolab.com?user=MadB0i&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideNums=E6EDF3&sideLabels=8B949E&dates=8B949E&background=0D1117&border=30363D&stroke=30363D" alt="streak stats" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=MadB0i&ring=A78BFA&fire=A78BFA&currStreakNum=E6EDF3&currStreakLabel=A78BFA&sideNums=E6EDF3&sideLabels=8B949E&dates=8B949E&background=120,1a1030,0d1117&border=0d1117&stroke=30363D&border_radius=16" />
+  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=MadB0i&ring=7C3AED&fire=7C3AED&currStreakNum=1F2937&currStreakLabel=5B21B6&sideNums=1F2937&sideLabels=6B7280&dates=6B7280&background=120,F3F0FF,FFFFFF&border=FFFFFF&stroke=D8D0EE&border_radius=16" />
+  <img height="170" alt="contribution streak" src="https://streak-stats.demolab.com?user=MadB0i&ring=A78BFA&fire=A78BFA&currStreakNum=E6EDF3&currStreakLabel=A78BFA&sideNums=E6EDF3&sideLabels=8B949E&dates=8B949E&background=120,1a1030,0d1117&border=0d1117&stroke=30363D&border_radius=16" />
+</picture>
 
 <br/>
 
