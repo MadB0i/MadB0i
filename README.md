@@ -180,13 +180,6 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 <p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
-<!-- ══ mascot ══ -->
-
-<div align="center">
-
-<img src="./cat-animation.svg" width="640" alt="neon cat mascot, on duty" />
-
-</div>
 
 <!-- ══ contact ══ -->
 
@@ -201,7 +194,7 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 <a href="https://github.com/MadB0i">
 <img src="https://img.shields.io/badge/GITHUB-18181B?style=for-the-badge&logo=github&logoColor=white" alt="github" />
 </a>
-<a href="mailto:rupjyotitalukdar98@gmail.com">
+<a href="mailto:contact.rupjyoti26@gmail.com">
 <img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" />
 </a>
 
