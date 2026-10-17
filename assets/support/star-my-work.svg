@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="40" viewBox="0 0 144 40" role="img" aria-labelledby="title">
+  <title id="title">Star My Work</title>
+  <rect x=".5" y=".5" width="143" height="39" rx="4" fill="#202127" stroke="#A78BFA"/>
+  <path d="m22 11 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="#EAB66C"/>
+  <text x="40" y="24.5" fill="#F1EEFA" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12" font-weight="600">Star My Work</text>
+</svg>

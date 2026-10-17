@@ -180,6 +180,32 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 <p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
+<!-- ══ support ══ -->
+
+## 🐾 Support my work
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/support/coffee-cat.png" />
+  <img src="./assets/support/coffee-cat.gif" width="144" height="144" alt="A tiny graphite cat holding an amber coffee mug, blinking and swishing its tail as steam turns into a heart." />
+</picture>
+
+<p><b>Cat inspected the code. Demanded coffee. No further comments.</b></p>
+
+<p><i>If something here helped you, a star makes my day.<br/>A coffee keeps the experiments running.</i></p>
+
+<p>
+  <a href="https://github.com/MadB0i/MadB0i"><img src="./assets/support/star-my-work.svg" width="144" height="40" alt="Star My Work" /></a>
+  <a href="https://github.com/sponsors/MadB0i"><img src="./assets/support/github-sponsors.svg" width="164" height="40" alt="GitHub Sponsors" /></a>
+</p>
+
+<p><sub>Buy Me a Coffee is still brewing. Stars are on the house.<br/>
+<a href="./assets/support/coffee-cat.png">Prefer a still cat?</a> Same attitude. Less motion.</sub></p>
+
+</div>
+
+<p align="center"><img src="./paw.svg" width="34" alt="" /></p>
 
 <!-- ══ contact ══ -->
 

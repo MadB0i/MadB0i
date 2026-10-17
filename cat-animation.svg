@@ -54,7 +54,6 @@
     </g>
 
     <g font-family="Fira Code, ui-monospace, monospace" font-size="10" letter-spacing="1.6" fill="#A78BFA" opacity="0.9">
-      <text x="60" y="30">MASCOT.EXE</text>
       <text x="848" y="30" fill="#22D3EE" text-anchor="end">ON_DUTY</text>
       <text x="52" y="240" fill="#5B6478">// supervising every commit</text>
       <text x="848" y="240" fill="#5B6478" text-anchor="end">v2.0</text>

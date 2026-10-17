@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="40" viewBox="0 0 164 40" role="img" aria-labelledby="title">
+  <title id="title">GitHub Sponsors</title>
+  <rect x=".5" y=".5" width="163" height="39" rx="4" fill="#A78BFA" stroke="#7761B5"/>
+  <path d="M22 28 14.6 21a5.1 5.1 0 0 1 7.4-7 5.1 5.1 0 0 1 7.4 7Z" fill="#201B2C"/>
+  <text x="40" y="24.5" fill="#201B2C" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12" font-weight="600">GitHub Sponsors</text>
+</svg>
