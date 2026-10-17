@@ -200,9 +200,6 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
   <a href="https://github.com/sponsors/MadB0i"><img src="./assets/support/github-sponsors.svg" width="164" height="40" alt="GitHub Sponsors" /></a>
 </p>
 
-<p><sub>Buy Me a Coffee is still brewing. Stars are on the house.<br/>
-<a href="./assets/support/coffee-cat.png">Prefer a still cat?</a> Same attitude. Less motion.</sub></p>
-
 </div>
 
 <p align="center"><img src="./paw.svg" width="34" alt="" /></p>
@@ -232,20 +229,10 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
   > ♥ <
 </pre>
 
-<sub>thanks for scrolling this far.</sub>
-<sub>cat approves. <a href="https://github.com/MadB0i/MadB0i">star button</a> bhi upar hi hai ↑ — just saying.</sub>
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=MadB0i&label=PROFILE%20VIEWS&color=A78BFA&style=flat-square" alt="Profile Views" />
-
-<br/><br/>
-
-<sub>probably coding something that wasn't on the roadmap.</sub>
-
-<br/><br/>
-
-**still learning · still building · still shipping**
+<!-- Migrated from Komarev total 1,169; offset excludes two pre-migration Hits checks. -->
+<a href="https://hits.sh/github.com/MadB0i/">
+<img src="https://hits.sh/github.com/MadB0i.svg?style=flat-square&label=PROFILE%20VIEWS&color=a78bfa&labelColor=555555&extraCount=1167" height="20" alt="Profile Views" />
+</a>
 
 </div>
 
