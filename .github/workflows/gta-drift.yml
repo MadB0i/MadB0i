@@ -1,4 +1,4 @@
-name: Generate Cat
+name: Generate GTA 6 Drift Contribution Graph
 
 on:
   schedule:
@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       duration:
-        description: "Walk duration in seconds"
+        description: "Drift duration in seconds"
         required: false
-        default: "25"
+        default: "24"
 
 permissions:
   contents: write
@@ -23,14 +23,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Render the contribution cat
+      - name: Render GTA 6 Drift Contribution Graph
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/gen_cat_graph.py \
+          python scripts/gen_gta_drift.py \
             --user MadB0i \
             --out dist \
-            --duration "${{ github.event.inputs.duration || '25' }}"
+            --duration "${{ github.event.inputs.duration || '24' }}"
 
       - uses: crazy-max/ghaction-github-pages@v3
         with:
