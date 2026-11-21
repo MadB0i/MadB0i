@@ -171,9 +171,9 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cybercat-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cybercat.svg" />
-  <img alt="Cyber-Cat drifting on a rocket hoverboard across this year's contribution graph" src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cybercat.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-sentinel-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-sentinel.svg" />
+  <img alt="KAVACH Tactical Sentinel scanning and authorizing this year's contribution matrix" src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-sentinel.svg" />
 </picture>
 
 </div>

@@ -1,4 +1,4 @@
-name: Generate Cyber-Cat Drift Contribution Graph
+name: Generate KAVACH Sentinel Contribution Graph
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       duration:
-        description: "Drift duration in seconds"
+        description: "Patrol sweep duration in seconds"
         required: false
         default: "24"
 
@@ -23,10 +23,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Render Cyber-Cat Drift Contribution Graph
+      - name: Render Sentinel Contribution Graph
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          python scripts/gen_kavach_drone.py \
+            --user MadB0i \
+            --out dist \
+            --duration "${{ github.event.inputs.duration || '24' }}"
           python scripts/gen_cyber_cat.py \
             --user MadB0i \
             --out dist \
