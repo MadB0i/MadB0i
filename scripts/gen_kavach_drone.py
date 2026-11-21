@@ -2,9 +2,9 @@
 """Generate an animated Tactical Security Drone (KAVACH Sentinel) contribution graph.
 
 Visualizes the GitHub contribution grid as a high-tech Zero-Trust Security Matrix.
-A tactical cyber-sentinel drone sweeps across the grid with a holographic radar
-beam and targeting crosshair, scanning and cryptographically authorizing each
-commit cell in real time.
+A tactical cyber-sentinel drone sweeps across the grid with high-speed quad rotors,
+a holographic scanner cone and targeting crosshair, authorizing commit cells
+with a crisp verification flash and peak-node radar pings.
 
 Stdlib only: zero external dependencies, 100% GitHub Camo & SVG SMIL compatible.
 """
@@ -55,15 +55,18 @@ GAP = 3
 PITCH = CELL + GAP  # 15px
 COLS = 53
 ROWS = 7
-PAD_L = 36
-PAD_T = 38
+PAD_L = 52
+PAD_T = 44
 PAD_R = 36
-PAD_B = 16
+PAD_B = 34
 GRID_W = COLS * PITCH - GAP  # 792px
 GRID_H = ROWS * PITCH - GAP  # 102px
-WIDTH = PAD_L + GRID_W + PAD_R  # 864px
-HEIGHT = PAD_T + GRID_H + PAD_B  # 156px
+WIDTH = PAD_L + GRID_W + PAD_R  # 880px
+HEIGHT = PAD_T + GRID_H + PAD_B  # 180px
+
 WEEKDAYS = ["", "Mon", "", "Wed", "", "Fri", ""]
+MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+MONTH_COLS = [0, 5, 9, 14, 18, 22, 27, 31, 36, 40, 44, 49]
 
 # ── Theme Palettes ───────────────────────────────────────────────────────────
 THEMES = {
@@ -72,17 +75,20 @@ THEMES = {
         "bg_gradient_end": "#110b24",
         "border": "#28174a",
         "grid_empty": "#130d24",
+        "unverified_fill": "#1b1333",
+        "unverified_stroke": "#382261",
         "cells": [
             "#130d24",  # Level 0 (Dormant substrate)
-            "#3b1c6e",  # Level 1 (Policy checked)
-            "#7c3aed",  # Level 2 (Zero-trust verified)
-            "#06b6d4",  # Level 3 (Guarded execution)
-            "#00f0ff",  # Level 4 (Cryptographically sealed)
+            "#3b1c6e",  # Level 1 (Policy checked - deep violet)
+            "#7c3aed",  # Level 2 (Zero-trust verified - vivid purple)
+            "#06b6d4",  # Level 3 (Guarded execution - cyan blue)
+            "#00f0ff",  # Level 4 (Cryptographically sealed - peak electric cyan)
         ],
         "drone_body": "#0e091d",
         "drone_edge": "#a78bfa",
         "drone_arm": "#3b2269",
         "rotor_ring": "#00f0ff",
+        "rotor_blade": "#38bdf8",
         "eye_core": "#00f0ff",
         "radar_cone": "#00f0ff",
         "reticle": "#a78bfa",
@@ -92,14 +98,18 @@ THEMES = {
         "hud_subtitle": "#a78bfa",
         "hud_accent": "#10b981",
         "label": "#7e6f99",
+        "footer_text": "#655684",
+        "footer_border": "#22163b",
     },
     "light": {
         "bg": "#f8f9ff",
         "bg_gradient_end": "#ede9fe",
         "border": "#ddd6fe",
-        "grid_empty": "#e4e0f5",
+        "grid_empty": "#ede9fe",
+        "unverified_fill": "#dfd7fa",
+        "unverified_stroke": "#c4b5fd",
         "cells": [
-            "#e4e0f5",  # Level 0
+            "#ede9fe",  # Level 0
             "#c084fc",  # Level 1
             "#8b5cf6",  # Level 2
             "#0284c7",  # Level 3
@@ -109,6 +119,7 @@ THEMES = {
         "drone_edge": "#6366f1",
         "drone_arm": "#4338ca",
         "rotor_ring": "#0284c7",
+        "rotor_blade": "#38bdf8",
         "eye_core": "#0284c7",
         "radar_cone": "#38bdf8",
         "reticle": "#6366f1",
@@ -118,6 +129,8 @@ THEMES = {
         "hud_subtitle": "#6366f1",
         "hud_accent": "#059669",
         "label": "#64748b",
+        "footer_text": "#748398",
+        "footer_border": "#e2e8f0",
     },
 }
 
@@ -128,15 +141,19 @@ def cell_centre(col: int, row: int) -> tuple[float, float]:
 
 
 def generate_flight_path(
-    curve_radius: float = 16.0,
-) -> tuple[str, str, list[tuple[int, int, float]], float, list[dict]]:
-    """Build the smooth continuous sentinel patrol trajectory across all 7 rows."""
+    curve_radius: float = 14.0,
+) -> tuple[str, float, list[tuple[int, int, float]], list[dict]]:
+    """Build the smooth continuous sentinel patrol trajectory across all 7 rows.
+
+    Maintains safe horizontal clearance (>16px) from weekday text labels on the left edge.
+    """
     R = curve_radius
-    start_x = PAD_L - 30.0
-    start_y = PAD_T + CELL / 2
+    x0, y0 = cell_centre(0, 0)
+    # Start point is aligned with turn apex, safely to the right of weekday labels
+    start_x = x0 - 16.0
+    start_y = y0
 
     segments = []
-    x0, y0 = cell_centre(0, 0)
     segments.append(("line", (start_x, start_y), (x0, y0)))
 
     cell_positions = []
@@ -154,8 +171,8 @@ def generate_flight_path(
                 # Right sweeping turn down to r + 1 (Clockwise)
                 y_next = cell_centre(COLS - 1, r + 1)[1]
                 p0 = (x_end, y_row)
-                p1 = (x_end + R * 1.3, y_row)
-                p2 = (x_end + R * 1.3, y_next)
+                p1 = (x_end + R * 1.2, y_row)
+                p2 = (x_end + R * 1.2, y_next)
                 p3 = (x_end, y_next)
                 segments.append(("curve", p0, p1, p2, p3, True))
         else:
@@ -169,8 +186,8 @@ def generate_flight_path(
                 # Left sweeping turn down to r + 1 (Counter-Clockwise)
                 y_next = cell_centre(0, r + 1)[1]
                 p0 = (x_end, y_row)
-                p1 = (x_end - R * 1.3, y_row)
-                p2 = (x_end - R * 1.3, y_next)
+                p1 = (x_end - R * 1.2, y_row)
+                p2 = (x_end - R * 1.2, y_next)
                 p3 = (x_end, y_next)
                 segments.append(("curve", p0, p1, p2, p3, False))
 
@@ -232,17 +249,13 @@ def generate_flight_path(
                     "apex": (d_prev + d_len * 0.5) / total_len,
                     "exit": dist_accum / total_len,
                     "is_clockwise": seg[5],
-                    "apex_pt": (
-                        (seg[1][0] + seg[4][0]) / 2 + (R if seg[5] else -R),
-                        (seg[1][1] + seg[4][1]) / 2,
-                    ),
                 }
             )
 
     route_d = " ".join(route_d_parts)
 
     cell_timings = []
-    for c, r, pt in cell_positions:
+    for c, r, _pt in cell_positions:
         if r % 2 == 0:
             c_dist = c * PITCH
         else:
@@ -260,42 +273,83 @@ def generate_flight_path(
 
 
 def build_drone_svg(th: dict, total_dur: float, walk_dur: float) -> str:
-    """Build the high-tech Tactical Security Sentinel Drone SVG markup."""
+    """Build the high-tech Tactical Security Sentinel Drone SVG markup.
+
+    Features spinning 4-rotor quadcopter blades, holographic scanner cone,
+    dual-ring rotating reticles, and cryptographic central sensor eye.
+    """
+    walk_fraction = walk_dur / total_dur
+    t_pulse_peak = min(0.985, walk_fraction + 0.02)
+    t_pulse_end = min(0.985, walk_fraction + 0.06)
+
     return f"""
     <!-- Holographic Scanner Aura Zone -->
-    <circle cx="0" cy="0" r="15" fill="url(#scan-zone-grad)" opacity="0.6" filter="url(#sentinel-glow)"/>
+    <circle cx="0" cy="0" r="14" fill="url(#scan-zone-grad)" opacity="0.65" filter="url(#sentinel-glow)"/>
 
     <!-- Forward Conical Radar Sweep -->
-    <polygon points="0,0 34,-12 34,12" fill="url(#radar-beam-grad)" opacity="0.45"/>
+    <polygon points="0,0 30,-11 30,11" fill="url(#radar-beam-grad)" opacity="0.48"/>
 
-    <!-- Tactical Targeting Reticle Crosshair -->
-    <g opacity="0.8">
-      <circle cx="0" cy="0" r="11" fill="none" stroke="{th['reticle']}" stroke-width="0.75" stroke-dasharray="3.5 2.5"/>
+    <!-- Tactical Targeting Reticle Crosshair (Outer & Inner Counter-Rotating) -->
+    <g opacity="0.85">
+      <!-- Outer Reticle Ring -->
+      <circle cx="0" cy="0" r="11" fill="none" stroke="{th['reticle']}" stroke-width="0.75" stroke-dasharray="3.5 2.5">
+        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Inner Reticle Ring (Counter-Clockwise) -->
+      <circle cx="0" cy="0" r="6.5" fill="none" stroke="{th['eye_core']}" stroke-width="0.6" stroke-dasharray="2 2" opacity="0.75">
+        <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Crosshair Tick Lines -->
       <line x1="-14" y1="0" x2="-7" y2="0" stroke="{th['reticle']}" stroke-width="0.8"/>
       <line x1="7" y1="0" x2="14" y2="0" stroke="{th['reticle']}" stroke-width="0.8"/>
       <line x1="0" y1="-14" x2="0" y2="-7" stroke="{th['reticle']}" stroke-width="0.8"/>
       <line x1="0" y1="7" x2="0" y2="14" stroke="{th['reticle']}" stroke-width="0.8"/>
-      <!-- Reticle slow rotation -->
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="8s" repeatCount="indefinite"/>
     </g>
 
     <!-- Carbon Fiber X-Frame Arms -->
     <line x1="-8.5" y1="-8.5" x2="8.5" y2="8.5" stroke="{th['drone_arm']}" stroke-width="2.6" stroke-linecap="round"/>
     <line x1="-8.5" y1="8.5" x2="8.5" y2="-8.5" stroke="{th['drone_arm']}" stroke-width="2.6" stroke-linecap="round"/>
 
-    <!-- 4 Quad-Rotor Thruster Rings -->
-    <!-- Top-Left Rotor Hub -->
-    <circle cx="-8.5" cy="-8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.1" opacity="0.85" filter="url(#sentinel-glow)"/>
-    <circle cx="-8.5" cy="-8.5" r="1.3" fill="{th['drone_body']}"/>
-    <!-- Top-Right Rotor Hub -->
-    <circle cx="8.5" cy="-8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.1" opacity="0.85" filter="url(#sentinel-glow)"/>
-    <circle cx="8.5" cy="-8.5" r="1.3" fill="{th['drone_body']}"/>
-    <!-- Bottom-Left Rotor Hub -->
-    <circle cx="-8.5" cy="8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.1" opacity="0.85" filter="url(#sentinel-glow)"/>
-    <circle cx="-8.5" cy="8.5" r="1.3" fill="{th['drone_body']}"/>
-    <!-- Bottom-Right Rotor Hub -->
-    <circle cx="8.5" cy="8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.1" opacity="0.85" filter="url(#sentinel-glow)"/>
-    <circle cx="8.5" cy="8.5" r="1.3" fill="{th['drone_body']}"/>
+    <!-- 4 High-Speed Quad-Rotor Thruster Rings with Animated Spinning Blades -->
+    <!-- Top-Left Rotor Hub (CCW Spin) -->
+    <circle cx="-8.5" cy="-8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.0" opacity="0.85" filter="url(#sentinel-glow)"/>
+    <circle cx="-8.5" cy="-8.5" r="3.8" fill="{th['rotor_blade']}" opacity="0.15"/>
+    <g transform="translate(-8.5, -8.5)">
+      <line x1="-3.8" y1="0" x2="3.8" y2="0" stroke="{th['rotor_blade']}" stroke-width="1.1" stroke-linecap="round" opacity="0.85">
+        <animateTransform attributeName="transform" type="rotate" values="0; -360" dur="0.14s" repeatCount="indefinite"/>
+      </line>
+      <circle cx="0" cy="0" r="1.3" fill="{th['drone_body']}"/>
+    </g>
+
+    <!-- Top-Right Rotor Hub (CW Spin) -->
+    <circle cx="8.5" cy="-8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.0" opacity="0.85" filter="url(#sentinel-glow)"/>
+    <circle cx="8.5" cy="-8.5" r="3.8" fill="{th['rotor_blade']}" opacity="0.15"/>
+    <g transform="translate(8.5, -8.5)">
+      <line x1="-3.8" y1="0" x2="3.8" y2="0" stroke="{th['rotor_blade']}" stroke-width="1.1" stroke-linecap="round" opacity="0.85">
+        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="0.14s" repeatCount="indefinite"/>
+      </line>
+      <circle cx="0" cy="0" r="1.3" fill="{th['drone_body']}"/>
+    </g>
+
+    <!-- Bottom-Left Rotor Hub (CW Spin) -->
+    <circle cx="-8.5" cy="8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.0" opacity="0.85" filter="url(#sentinel-glow)"/>
+    <circle cx="-8.5" cy="8.5" r="3.8" fill="{th['rotor_blade']}" opacity="0.15"/>
+    <g transform="translate(-8.5, 8.5)">
+      <line x1="-3.8" y1="0" x2="3.8" y2="0" stroke="{th['rotor_blade']}" stroke-width="1.1" stroke-linecap="round" opacity="0.85">
+        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="0.14s" repeatCount="indefinite"/>
+      </line>
+      <circle cx="0" cy="0" r="1.3" fill="{th['drone_body']}"/>
+    </g>
+
+    <!-- Bottom-Right Rotor Hub (CCW Spin) -->
+    <circle cx="8.5" cy="8.5" r="4.2" fill="none" stroke="{th['rotor_ring']}" stroke-width="1.0" opacity="0.85" filter="url(#sentinel-glow)"/>
+    <circle cx="8.5" cy="8.5" r="3.8" fill="{th['rotor_blade']}" opacity="0.15"/>
+    <g transform="translate(8.5, 8.5)">
+      <line x1="-3.8" y1="0" x2="3.8" y2="0" stroke="{th['rotor_blade']}" stroke-width="1.1" stroke-linecap="round" opacity="0.85">
+        <animateTransform attributeName="transform" type="rotate" values="0; -360" dur="0.14s" repeatCount="indefinite"/>
+      </line>
+      <circle cx="0" cy="0" r="1.3" fill="{th['drone_body']}"/>
+    </g>
 
     <!-- Central Armored Tactical Pod / Fuselage -->
     <polygon points="0,-6.5 5.5,-3 5.5,3 0,6.5 -5.5,3 -5.5,-3"
@@ -311,13 +365,13 @@ def build_drone_svg(th: dict, total_dur: float, walk_dur: float) -> str:
     </circle>
     <circle cx="0" cy="0" r="1.4" fill="#ffffff"/>
 
-    <!-- Final Verification Pulse: Expands across final day -->
-    <circle cx="0" cy="0" r="18" fill="none" stroke="{th['eye_core']}" stroke-width="1.2" opacity="0">
-      <animate attributeName="opacity" values="0; 0; 0.9; 0"
-               keyTimes="0; {walk_dur / total_dur:.3f}; {(walk_dur + 0.3) / total_dur:.3f}; 0.99"
+    <!-- Final Verification Pulse: Expands across final day during hold period -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="{th['eye_core']}" stroke-width="1.2" opacity="0">
+      <animate attributeName="opacity" values="0; 0; 0.9; 0; 0"
+               keyTimes="0; {walk_fraction:.4f}; {t_pulse_peak:.4f}; {t_pulse_end:.4f}; 1"
                dur="{total_dur:.2f}s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="12; 12; 26; 32"
-               keyTimes="0; {walk_dur / total_dur:.3f}; {(walk_dur + 0.6) / total_dur:.3f}; 0.99"
+      <animate attributeName="r" values="12; 12; 26; 32; 32"
+               keyTimes="0; {walk_fraction:.4f}; {t_pulse_peak:.4f}; {t_pulse_end:.4f}; 1"
                dur="{total_dur:.2f}s" repeatCount="indefinite"/>
     </circle>
     """
@@ -337,7 +391,7 @@ def build_svg(
     total_dur = walk_dur + hold_dur
     walk_fraction = walk_dur / total_dur
 
-    route_d, total_len, cell_timings, turns_info = generate_flight_path()
+    route_d, total_len, cell_timings, _turns_info = generate_flight_path()
 
     o: list[str] = []
     add = o.append
@@ -402,43 +456,81 @@ def build_svg(
     )
 
     # ── Tactical HUD Header ──────────────────────────────────────────────────
+    # Left: Title
     add(
-        f'<text x="{PAD_L:g}" y="22" font-family="system-ui, -apple-system, BlinkMacSystemFont, '
+        f'<text x="{PAD_L:g}" y="20" font-family="system-ui, -apple-system, BlinkMacSystemFont, '
         f'\'Segoe UI\', Roboto, sans-serif" font-weight="900" font-size="11.5" '
         f'letter-spacing="1.2" fill="url(#title-grad)">KAVACH SENTINEL '
         f'<tspan font-weight="500" font-size="10" fill="{th["hud_subtitle"]}" letter-spacing="0.5">// ZERO-TRUST MATRIX</tspan></text>'
     )
+
+    # Mid-Right: Pulsing Status Indicator Dot + Enforced Label
+    status_x = 445
     add(
-        f'<text x="{WIDTH - PAD_R:g}" y="22" text-anchor="end" font-family="ui-monospace, SFMono-Regular, '
-        f'Menlo, monospace" font-size="10" font-weight="500" fill="{th["label"]}" letter-spacing="0.8">'
-        f'STATUS: <tspan fill="{th["hud_accent"]}" font-weight="800">ENFORCED</tspan> · '
-        f'<tspan fill="{th["hud_title"]}" font-weight="800">{total} COMMITS VERIFIED</tspan></text>'
+        f'<g transform="translate({status_x}, 16)">'
+        f'<circle cx="0" cy="0" r="3.2" fill="{th["hud_accent"]}">'
+        f'<animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>'
+        f'<animate attributeName="r" values="3.0;3.8;3.0" dur="2s" repeatCount="indefinite"/>'
+        f'</circle>'
+        f'<text x="9" y="3.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="9.5" font-weight="500" fill="{th["label"]}" letter-spacing="0.8">'
+        f'STATUS: <tspan fill="{th["hud_accent"]}" font-weight="800">ENFORCED</tspan></text>'
+        f'</g>'
     )
+
+    # Right: Verified Commits Counter with explicit Rolling Time Window (LAST 12M)
+    add(
+        f'<text x="{WIDTH - PAD_R:g}" y="20" text-anchor="end" font-family="ui-monospace, SFMono-Regular, '
+        f'Menlo, monospace" font-size="9.5" font-weight="500" fill="{th["label"]}" letter-spacing="0.8">'
+        f'[ <tspan fill="{th["hud_title"]}" font-weight="800">{total} COMMITS VERIFIED</tspan> · '
+        f'<tspan fill="{th["label"]}" font-weight="600">LAST 12M</tspan> ]</text>'
+    )
+
+    # Header Divider Line
     add(
         f'<line x1="{PAD_L:g}" y1="28" x2="{WIDTH - PAD_R:g}" y2="28" '
         f'stroke="{th["border"]}" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.6"/>'
     )
 
-    # ── Day-of-Week Labels ───────────────────────────────────────────────────
+    # ── Month Markers (Above Grid Columns) ────────────────────────────────────
+    month_svg = []
+    for col_idx, name in zip(MONTH_COLS, MONTH_NAMES):
+        mx = PAD_L + col_idx * PITCH
+        month_svg.append(
+            f'<text x="{mx}" y="39" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+            f'font-size="8.5" font-weight="500" fill="{th["label"]}" opacity="0.7">{name}</text>'
+        )
+    add("".join(month_svg))
+
+    # ── Day-of-Week Labels (Left of Grid, Safe Clearance >16px from turn apex) ─
     for r, name in enumerate(WEEKDAYS):
         if name:
             y = PAD_T + r * PITCH + CELL / 2 + 3.5
             add(
-                f'<text x="{PAD_L - 8:g}" y="{y:g}" text-anchor="end" fill="{th["label"]}" '
+                f'<text x="24" y="{y:g}" text-anchor="end" fill="{th["label"]}" '
                 f'font-size="8.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
                 f'font-weight="600" opacity="0.75">{name}</text>'
             )
 
-    # ── Base Grid: Dormant Cells (0 filters for 60 FPS) ──────────────────────
+    # ── Base Grid: Zero-Trust Substrate (Dormant empty + Dim Unverified Commit Nodes)
+    # Renders level-0 as flat empty slots, and level>0 as dim, low-contrast unverified nodes
     base_rects = []
     for r in range(ROWS):
         for c in range(COLS):
             x = PAD_L + c * PITCH
             y = PAD_T + r * PITCH
-            base_rects.append(
-                f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="3" '
-                f'fill="{th["grid_empty"]}"/>'
-            )
+            level = grid[r][c]
+            if level <= 0:
+                base_rects.append(
+                    f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
+                    f'fill="{th["grid_empty"]}"/>'
+                )
+            else:
+                base_rects.append(
+                    f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
+                    f'fill="{th["unverified_fill"]}" stroke="{th["unverified_stroke"]}" '
+                    f'stroke-width="0.7"/>'
+                )
     add("".join(base_rects))
 
     # ── Tactical Scanner Circuit Trail (Follows behind drone) ────────────────
@@ -447,12 +539,16 @@ def build_svg(
         f'<path d="{route_d}" fill="none" stroke="{th["trace_line"]}" stroke-width="1.2" '
         f'stroke-dasharray="4 4" stroke-dashoffset="{route_dash}" opacity="0.45">'
         f'<animate attributeName="stroke-dashoffset" values="{route_dash};0;0;{route_dash}" '
-        f'keyTimes="0;{walk_fraction:.3f};0.98;1" dur="{total_dur:.2f}s" repeatCount="indefinite"/>'
+        f'keyTimes="0;{walk_fraction:.4f};0.985;1" dur="{total_dur:.2f}s" repeatCount="indefinite"/>'
         f"</path>"
     )
 
-    # ── Dynamic Commit Cell Authorization / Ignition ─────────────────────────
+    # ── Two-Stage Cell Reveal: Verification Flash + Final Authorized Commit Color
+    # Single high-performance rect per commit cell:
+    # Ignites with a crisp white/cyan flash, then blooms into the verified commit color
     lit_cells = []
+    peak_pings = []
+
     for col, row, norm_time in cell_timings:
         level = grid[row][col]
         if level <= 0:
@@ -461,25 +557,54 @@ def build_svg(
         y = PAD_T + row * PITCH
         cell_color = th["cells"][level]
 
-        t_ignite = norm_time * walk_fraction
-        t_lit = min(1.0, t_ignite + 0.005)
+        t_ignite = max(0.001, norm_time * walk_fraction)
+        t_flash = min(0.985, t_ignite + 0.003)
+        t_settle = min(0.985, t_ignite + 0.010)
 
+        # Flash color: bright cyan for level 4, crisp white-violet for lower levels
+        flash_color = "#e0f2fe" if level >= 3 else "#ffffff"
+
+        # Verification rect: starts at opacity 0, flashes bright at t_ignite,
+        # settles into its final level color, and holds for the full 3.5s review period
         lit_cells.append(
-            f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="3" '
+            f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2.5" '
             f'fill="{cell_color}" opacity="0">'
             f'<animate attributeName="opacity" values="0;0;1;1;0" '
-            f'keyTimes="0;{t_ignite:.4f};{t_lit:.4f};0.985;1" '
+            f'keyTimes="0;{t_ignite:.3f};{t_flash:.3f};0.985;1" '
+            f'dur="{total_dur:.2f}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="fill" values="{flash_color};{flash_color};{cell_color};{cell_color};{flash_color}" '
+            f'keyTimes="0;{t_ignite:.3f};{t_settle:.3f};0.985;1" '
             f'dur="{total_dur:.2f}s" repeatCount="indefinite"/>'
             f"</rect>"
         )
+
+        # High-Intensity Peak Node Radar Ping (Level 4 commits only)
+        if level >= 4:
+            cx = x + CELL / 2
+            cy = y + CELL / 2
+            t_ping_peak = min(0.985, t_ignite + 0.004)
+            t_ping_end = min(0.985, t_ignite + 0.028)
+            peak_pings.append(
+                f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="6" fill="none" stroke="{th["cells"][4]}" '
+                f'stroke-width="1.1" opacity="0">'
+                f'<animate attributeName="r" values="6;6;16;22;22" '
+                f'keyTimes="0;{t_ignite:.3f};{t_ping_peak:.3f};{t_ping_end:.3f};1" '
+                f'dur="{total_dur:.2f}s" repeatCount="indefinite"/>'
+                f'<animate attributeName="opacity" values="0;0;0.75;0;0" '
+                f'keyTimes="0;{t_ignite:.3f};{t_ping_peak:.3f};{t_ping_end:.3f};1" '
+                f'dur="{total_dur:.2f}s" repeatCount="indefinite"/>'
+                f"</circle>"
+            )
+
     add("".join(lit_cells))
+    add("".join(peak_pings))
 
     # ── Tactical Sentinel Drone Hero Sprite ──────────────────────────────────
     drone_markup = build_drone_svg(th, total_dur, walk_dur)
     add(
         f'<g id="moving-sentinel">'
         f'<animateMotion dur="{total_dur:.2f}s" rotate="auto" fill="freeze" repeatCount="indefinite" '
-        f'keyPoints="0;1;1;0" keyTimes="0;{walk_fraction:.3f};0.985;1" calcMode="linear">'
+        f'keyPoints="0;1;1;0" keyTimes="0;{walk_fraction:.4f};0.985;1" calcMode="linear">'
         f'<mpath xlink:href="#sentinel-route" href="#sentinel-route"/>'
         f"</animateMotion>"
         f'<g id="drone-hover-banking">'
@@ -488,6 +613,56 @@ def build_svg(
         f'values="1 1; 1.03 0.97; 1 1" dur="1.8s" repeatCount="indefinite"/>'
         f"{drone_markup}"
         f"</g></g>"
+    )
+
+    # ── Minimal Bottom HUD Footer ────────────────────────────────────────────
+    # Bottom divider line
+    add(
+        f'<line x1="{PAD_L:g}" y1="155" x2="{WIDTH - PAD_R:g}" y2="155" '
+        f'stroke="{th["footer_border"]}" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.7"/>'
+    )
+
+    # Footer Left: Monospace Security Policy Telemetry
+    add(
+        f'<text x="{PAD_L:g}" y="169" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="9" fill="{th["footer_text"]}" letter-spacing="0.8">'
+        f'POLICY: <tspan fill="{th["hud_subtitle"]}" font-weight="700">DEFAULT-DENY</tspan> // '
+        f'AUDIT: <tspan fill="{th["hud_accent"]}" font-weight="700">PASS</tspan></text>'
+    )
+
+    # Footer Right: Compact Intensity Legend (UNVERIFIED → LOW → MED → PEAK)
+    # Rendered right-aligned ending at WIDTH - PAD_R (844)
+    # UNVERIFIED [box] → LOW [box] → MED [box] → PEAK [box]
+    legend_right_x = WIDTH - PAD_R
+    add(
+        f'<g transform="translate({legend_right_x - 245}, 162)">'
+        # UNVERIFIED
+        f'<rect x="0" y="0" width="7" height="7" rx="1.5" fill="{th["unverified_fill"]}" '
+        f'stroke="{th["unverified_stroke"]}" stroke-width="0.6"/>'
+        f'<text x="11" y="6.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="8.5" fill="{th["footer_text"]}">UNVERIFIED</text>'
+        # Arrow 1
+        f'<text x="80" y="6.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="8.5" fill="{th["footer_text"]}" opacity="0.5">→</text>'
+        # LOW
+        f'<rect x="94" y="0" width="7" height="7" rx="1.5" fill="{th["cells"][1]}"/>'
+        f'<text x="105" y="6.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="8.5" fill="{th["footer_text"]}">LOW</text>'
+        # Arrow 2
+        f'<text x="131" y="6.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="8.5" fill="{th["footer_text"]}" opacity="0.5">→</text>'
+        # MED
+        f'<rect x="145" y="0" width="7" height="7" rx="1.5" fill="{th["cells"][2]}"/>'
+        f'<text x="156" y="6.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="8.5" fill="{th["footer_text"]}">MED</text>'
+        # Arrow 3
+        f'<text x="182" y="6.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="8.5" fill="{th["footer_text"]}" opacity="0.5">→</text>'
+        # PEAK
+        f'<rect x="196" y="0" width="7" height="7" rx="1.5" fill="{th["cells"][4]}"/>'
+        f'<text x="207" y="6.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        f'font-size="8.5" fill="{th["footer_text"]}" font-weight="700">PEAK</text>'
+        f'</g>'
     )
 
     add("</svg>")
@@ -512,9 +687,9 @@ def generate_demo_grid() -> tuple[list[list[int]], int]:
     random.seed(42)
     weeks = []
     total = 0
-    for w in range(COLS):
+    for _w in range(COLS):
         week = []
-        for d in range(ROWS):
+        for _d in range(ROWS):
             r = random.random()
             if r < 0.28:
                 lvl = 0
@@ -585,8 +760,8 @@ def main() -> int:
     ap.add_argument(
         "--duration",
         type=float,
-        default=24.0,
-        help="Patrol sweep duration in seconds",
+        default=11.5,
+        help="Patrol sweep duration in seconds (loop adds 3.5s hold, total=15s)",
     )
     ap.add_argument("--demo", action="store_true", help="Force demo sample mode")
     ap.add_argument("--fixture", help="Path to cached calendar JSON")
@@ -608,6 +783,17 @@ def main() -> int:
         grid, total = normalise(weeks), cal.get("totalContributions", 0)
     else:
         token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+        if not token:
+            try:
+                import subprocess
+
+                res = subprocess.run(
+                    ["gh", "auth", "token"], capture_output=True, text=True, check=True
+                )
+                token = res.stdout.strip() or None
+            except Exception:
+                token = None
+
         if token:
             try:
                 print(f"Fetching live GitHub contributions for @{args.user}...")
@@ -644,9 +830,11 @@ def main() -> int:
             fh.write(svg)
 
         file_size_kb = len(svg) / 1024
+        total_loop = args.duration + 3.5
         print(
             f"✓ {path:<48} {file_size_kb:>6.1f} KiB  "
-            f"sweep={args.duration:g}s  theme={theme:<5}  total={total}"
+            f"sweep={args.duration:g}s hold=3.5s loop={total_loop:g}s  "
+            f"theme={theme:<5}  total={total}"
         )
 
     print("\nKAVACH Tactical Sentinel Contribution Graph generated successfully!")
