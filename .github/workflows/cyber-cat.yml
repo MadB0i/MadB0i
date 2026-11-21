@@ -1,4 +1,4 @@
-name: Generate GTA 6 Drift Contribution Graph
+name: Generate Cyber-Cat Drift Contribution Graph
 
 on:
   schedule:
@@ -23,10 +23,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Render GTA 6 Drift Contribution Graph
+      - name: Render Cyber-Cat Drift Contribution Graph
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          python scripts/gen_cyber_cat.py \
+            --user MadB0i \
+            --out dist \
+            --duration "${{ github.event.inputs.duration || '24' }}"
           python scripts/gen_gta_drift.py \
             --user MadB0i \
             --out dist \

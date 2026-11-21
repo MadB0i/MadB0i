@@ -75,22 +75,22 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 <tr>
 <td width="50%" valign="top">
 
-### [Mission Khaki](https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki)
+### [AxomQuest](https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki)
 
-**Free exam-prep app on Google Play** for Army / Assam Police / SSC / CAPF aspirants — full mock tests with real negative marking and in-test English / Hindi / Assamese translation.
+**Exam-prep app on Google Play** for Assam Police, ADRE & SSC aspirants — 100+ full mock tests with authentic negative marking, analytics, and in-test English / Hindi / Assamese translation.
 
 <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
 <img src="https://img.shields.io/badge/Google_Play-414141?style=flat-square&logo=google-play&logoColor=white" alt="Google Play" />
 
 <br/>
-<sub><a href="https://github.com/MadB0i/Mission_Khaki">site repo</a></sub>
+<sub><a href="https://madb0i.github.io/AxomQuest/">live site</a> · <a href="https://github.com/MadB0i/AxomQuest">site repo</a></sub>
 
 </td>
 <td width="50%" valign="top">
 
 ### [C.U.R.E](https://github.com/MadB0i/C.U.R.E)
 
-**Clean USB Rescue Engine** — finds how software persists across reboots (Run keys, services, WMI…), attaches evidence to every finding, quarantines but never deletes without consent.
+**Clean USB Rescue Engine & Security Console** — catches stealth malware, persistence mechanisms (Run keys, services, WMI), and LOLBins that Defender skips; 100% offline with evidence chains and zero telemetry.
 
 <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
 <img src="https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" />
@@ -123,7 +123,7 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 
 <div align="center">
 
-<sub>Also: <a href="https://github.com/MadB0i/WireSong">WireSong</a> — network traffic as generative soundscape (<a href="https://madb0i.github.io/WireSong/">live demo</a>) · <a href="https://github.com/MadB0i/Pehredar">Pehredar</a> — Android root/spyware detection over ADB · <a href="https://github.com/MadB0i/Ustad">Ustad</a> — local LLM distillation studio · <a href="https://github.com/MadB0i?tab=repositories"><b>→ all repos</b></a></sub>
+<sub>Also: <a href="https://github.com/MadB0i/kabootar">Kabootar</a> — zero-backend encrypted interactive cards (<a href="https://madb0i.github.io/kabootar/">live demo</a>) · <a href="https://github.com/MadB0i/WireSong">WireSong</a> — generative network soundscape (<a href="https://madb0i.github.io/WireSong/">live demo</a>) · <a href="https://github.com/MadB0i/Pehredar">Pehredar</a> — ADB spyware detection · <a href="https://github.com/MadB0i/Ustad">Ustad</a> — local LLM studio · <a href="https://github.com/MadB0i?tab=repositories"><b>→ all repos</b></a></sub>
 
 </div>
 
@@ -171,9 +171,9 @@ Most of my projects start the same way: **"Wait... why doesn't this already exis
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-car-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-car.svg" />
-  <img alt="a GTA 6 style car drifting across this year's contribution graph" src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-car.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cybercat-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cybercat.svg" />
+  <img alt="Cyber-Cat drifting on a rocket hoverboard across this year's contribution graph" src="https://raw.githubusercontent.com/MadB0i/MadB0i/output/github-contribution-grid-cybercat.svg" />
 </picture>
 
 </div>
